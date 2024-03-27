@@ -1,0 +1,85 @@
+/*mat-toolbar{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgb(255, 255, 255);
+}
+ul {
+  li {
+  margin: 400px;
+  list-style: none;
+}}
+*/
+ul {
+    li {
+    margin: 400px;
+    list-style: none;
+  }}
+  
+  button{
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .user{
+    font-size :15px;
+    display:flex;
+    align-items: center;
+    
+    }
+    
+    .user-image{
+        border-radius: 60%;
+        width: 40px;
+        height: 40px;
+        margin-right:8px;
+    
+    }
+    .user-name{
+        font-size:14px;
+        font-weight: bold;
+        margin-right: 8px;
+    }
+    .user-image-icon{
+        height:18px ;
+        font-size: 16px;
+    }
+    .user-arrow{
+        font-size:14px;
+        color: #888;
+    }
+    ::ng-deep{
+        .mat-menu-content{
+            width: 160px;
+    
+        }
+    }
+  
+    .search-icon {
+      font-size: 25px;
+      color: #0e0d0d;
+      margin-left: 50px;
+      border-radius: 3px; /* Ajustez cette valeur selon vos besoins */
+    }
+    
+    .search-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      font-size: 10px;
+      margin-left: 20px; /* Ajoute une marge à gauche pour l'espace entre l'icône et le champ de recherche */
+    }
+    
+    .search-input::placeholder {
+      color: #888;
+    }
+    
+    
+    .hide-xs {
+      display: none;
+    }
+    
+    .show-xs {
+      display: initial;
+    }

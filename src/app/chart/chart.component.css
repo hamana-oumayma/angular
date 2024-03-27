@@ -1,0 +1,17 @@
+/* styles.css ou styles.scss */
+
+.line-graph-holder {
+    margin: 10px 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(255, 255, 255);
+}
+
+.nav-item {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: default;
+}
+
+.nav-item:hover {
+    transform: translate(0, -8px);
+    box-shadow: 0 20px 20px rgba(150, 133, 167, 0.16);
+}

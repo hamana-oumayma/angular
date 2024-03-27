@@ -1,0 +1,44 @@
+<mat-toolbar>
+    <mat-toolbar-row class="justify-content-between">
+      <button mat-icon-button (click)="toggleFullscreen()">
+        <mat-icon>{{ isFullscreen ? 'fullscreen_exit' : 'fullscreen' }}</mat-icon>
+      </button>
+  
+      <button mat-icon-button (click)="toggleSidebar()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-icon class="search-icon">search</mat-icon>
+      <mat-form-field class="search"  [ngClass]="{'search-open': open == true}"> 
+       
+  
+        <input matInput placeholder="Search" autocomplete="off" (focus)="bigMenu = true" (focusout)="bigMenu = false">
+       
+      </mat-form-field>
+  
+      <div class="row mr-2 ml-auto">
+        <ul class="ml-auto">
+          <li>
+            <button mat-button [matMenuTriggerFor]="menu" class="user mt-2 d-flex align-items-center">
+              <img src="/assets/images/user.png" alt="" class="user-image mr-1 p-2">
+              User Name
+              <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon>settings</mat-icon>
+                Edit Profile
+              </button>
+              <button mat-menu-item>
+                <mat-icon>chat</mat-icon>
+                My Inbox
+              </button>
+              <button mat-menu-item>
+                <mat-icon>exit_to_app</mat-icon>
+                Logout
+              </button>
+            </mat-menu>
+          </li>
+        </ul>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>

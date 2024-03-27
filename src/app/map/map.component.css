@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ajout pour inclure les rembourrages et les bordures dans la largeur/hauteur totale */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.map-container {
+    background-color: white;
+    border: 1px solid #000000;
+    padding: 20px;
+    width: 90%; /* Largeur du cadre */
+    max-width: 1200px; /* Largeur maximale */
+    margin: 0 auto; /* Centrage horizontal */
+}
+
+.map-title {
+    text-align:start;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+#provinces-map path {
+    stroke-width: 4px; /* Définissez l'épaisseur du trait ici */
+}
+
+.svg-container {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000000;
+    background-color: #555;
+    float: left;
+    margin-right: 20px;
+}
+
+svg path:hover {
+    fill: #bcbdbe;
+    cursor: pointer;
+}
+
+svg {
+    float: left;
+    margin-left: 90px;
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    padding: 40px 0;
+    text-align: center; 
+}
+
+main h2 {
+    font-size: 2em;
+    color: rgba(243, 247, 250, 0.952);
+}
+
+main p {
+    color: #555;
+}

@@ -1,0 +1,161 @@
+<!--Extended table -->
+
+<div *ngIf="selectedTab === 'extended'" class="shopping-wrapper">
+  <h4 class="card-title mb-1">Shopping Cart</h4>
+  <div class="shopping">
+      <table class="table text-center m-0">
+          <thead>
+              <tr>
+                  <th>Image</th>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Status</th>
+                  <th>Amount</th>
+                  <th>Delete</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><img class="height-50" src="/assets/images/total.jfif" alt="image" /></td>
+                  <td>Preslia 32 (TOTAL)</td>
+                  <td>1</td>
+                  <td><span class="badge badge-pill bg-light-primary cursor-pointer">Active</span></td>
+                  <td>$19.94</td>
+                  <td><i class="ft-trash-2"></i></td>
+              </tr>
+              <tr>
+                  <td><img class="height-50" src="/assets/images/mobil.jpg" alt="image" /></td>
+                  <td>MOBIL : DTE 832</td>
+                  <td>2</td>
+                  <td><span class="badge badge-pill bg-light-danger cursor-pointer">Disabled</span></td>
+                  <td>$99.00</td>
+                  <td><i class="ft-trash-2"></i></td>
+              </tr>
+              <tr>
+                  <td><img class="height-50" src="/assets/images/Q8.jfif" alt="image" /></td>
+                  <td>Q8 volta</td>
+                  <td>1</td>
+                  <td><span class="badge badge-pill bg-light-info cursor-pointer">Paused</span></td>
+                  <td>$299.00</td>
+                  <td><i class="ft-trash-2"></i></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>
+
+<!--SHOPPING CART-->
+<br> <br> 
+<div *ngIf="selectedTab !== 'extended'">
+ 
+<section id="shopping-cart">
+    <div class="border">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <br>
+                        <h4 class="card-title" style="color:#5c6bc0;">Achat</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body table-responsive">
+                            <table class="table text-center m-0">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Produit</th>
+                                        <th>Prix</th>
+                                        <th>Quantité</th>
+                                        <th>Montant</th>
+                                        <th>Supprimer</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let product of products">
+                                      <td><img [src]="product.image" alt="product" style="height: 50px;"></td>
+                                        <td>{{ product.name }}</td>
+                                        <td>{{ product.price }}</td>
+                                        <td class="quantity-cell">
+                                            <div class="btn-group ml-1">
+                                                <button class="btn btn-primary px-1 py-1 font-medium-5 decrease-btn" (click)="decreaseQuantity(product)">-</button>
+                                                <span class="quantity">{{ product.quantity }}</span>
+                                                <button class="btn btn-primary px-1 py-1 font-medium-5 increase-btn" (click)="increaseQuantity(product)">+</button>
+                                            </div>
+                                        </td>
+                                        <td>{{ product.price * product.quantity }}</td>
+                                        <td>
+                                            <a href="javascript:;" class="danger" (click)="deleteProduct(product)">
+                                                <i class="ft-trash font-medium-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="text-right font-weight-bold">Total:</td>
+                                        <td>{{ calculatetotalAmount() }}</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  </div>
+<!--Report table-->
+<br><br>
+<div *ngIf="selectedTab !== 'extended'">
+  <section id="report">
+    <div class="border">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            <br>
+            <h4 class="card-title" style="color:#5c6bc0;">Les PVs De Réunion</h4>
+          </div>
+          <div class="card-content">
+            <div class="card-body table-responsive">
+              <table class="table text-center m-0">
+                <thead>
+                  <tr>
+                    
+                    <th>Date</th> 
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Centrale</th>
+                    <th>Rapport</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of items">
+                      <td>{{item.date}}</td> 
+                      <td>{{item.firstName}}</td>
+                      <td>{{item.lastName}}</td>
+                      <td>{{item.centrale}}</td>
+                      <td>{{item.report}} <i class="ft-upload ml-5" (click)="importReport()"></i></td>
+                      <td class="text-truncate">
+                        <a href="javascript:;" class="info p-0" (click)="showUserInfo(item)">
+                          <i class="ft-user font-medium-3 mr-2"></i>
+                        </a>
+                        <a href="javascript:;" class="success p-0" (click)="editUser(item)">
+                          <i class="ft-edit-2 font-medium-3 mr-2"></i>
+                        </a>
+                        <a href="javascript:;" class="danger p-0" (click)="deleteUser(item)">
+                          <i class="ft-x font-medium-3"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+</div>

@@ -1,0 +1,79 @@
+.logo {
+    text-align: center;
+    padding: 2.6rem 1rem;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.mat-sidenav {
+    background-color: #14156e; /* Couleur de fond modifiée pour le side nav */
+}
+
+.mat-icon {
+    vertical-align: center;
+    margin-right: 1rem;
+}
+
+.mat-divider {
+    border-top-width: 2px;
+    border-color: rgb(204, 223, 235);
+}
+
+.mat-list-item {
+    color: rgb(255, 255, 255) !important;
+    font-size: 0.8rem;
+    height: 44px !important;
+    margin-bottom: 4px;
+}
+
+.mat-list-item:hover .mat-list-item-content {
+    background: #b4b4b4 !important;
+}
+
+.list-item-active {
+    color: antiquewhite !important;
+}
+
+.list-item-active .mat-list-item-content {
+    background: #060e1f !important;
+}
+
+.list-item-active .mat-list-item-content:hover {
+    background: #06163b !important;
+}
+
+.mat-subheader {
+    color: #c8cbe6;
+    font-size: 0.6rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.mat-expansion-panel {
+    background-color: #5c6bc0;
+    color:#ccd2f0 !important;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    vertical-align: center;
+  }
+ /* .mat-expansion-panel-header {
+    background-color:#5c6bc0;
+  }*/
+  
+  .mat-expansion-panel-header mat-icon.mat-icon-rtl {
+    transform: (-8px);
+  }
+  
+  .mat-expansion-panel-header mat-panel-title {
+    color: white;
+  }
+  .mat-expansion-panel-header {
+    background-color: #5c6bc0; /* Couleur de fond du panneau */
+    color: white; /* Couleur du texte */
+  }
+  
+  .mat-icon {
+    margin-right: 8px; /* Espacement entre l'icône et le texte */
+  }
+  

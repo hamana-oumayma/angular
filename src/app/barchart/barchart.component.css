@@ -1,0 +1,72 @@
+
+ /* .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin: 10px;
+  }
+  
+  .button {
+    width: 90px;
+    height: 30px;
+    padding: 10px;
+    background-color: #5c6bc0;
+    border: 1px solid #11131d;
+    border-radius: 1px;
+    cursor: pointer;
+    
+  }
+  
+  .button:hover {
+    background-color: #e6e6e6;
+  }
+*/
+.container {
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid white;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+  }
+  
+  .button-container button {
+    width: 40px;
+    height: 30px;
+    background-color: #5c6bc0;
+    border: 1px solid #353949;
+    border-radius: 1px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container button:hover {
+    background-color: #e6e6e6;
+  }
+  .dash-bar-graph-holder {
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid white;
+}
