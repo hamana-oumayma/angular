@@ -1,1 +1,21 @@
-<p>tg1 works!</p>
+<table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Taux de dégradation</th>
+        <th>Déf. conso</th>
+        <th>Rendement</th>
+        <th>Conso gaz</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of birmchergatg1Data">
+        <td>{{ item.Date_Birmchergatg1 }}</td>
+        <td>{{ item.Tauxdegradation_Birmchergatg1 }}</td>
+        <td>{{ item.defconso_Birmchergatg1 }}</td>
+        <td>{{ item.rendement_Birmchergatg1 }}</td>
+        <td>{{ item.consogaz_Birmchergatg1 }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

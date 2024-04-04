@@ -26,6 +26,7 @@ import { CardsComponent } from './cards/cards.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { TablesComponent } from './tables/tables.component';
 import { HeaderComponent } from './header/header.component';
+import { HttpClientModule } from '@angular/common/http';
 //BIRMCHERGUA
 import { TG1Component as TG1ComponentBirmchergua } from './Birmchergua/TGs/tg1/tg1.component';
 import { TG2Component as TG2ComponentBirmchergua } from './Birmchergua/TGs/tg2/tg2.component';
@@ -56,6 +57,11 @@ import { INFOComponent as INFOComponentFeriana} from './Feriana/info/info.compon
 //Goulette
 import { TG1Component as TG1ComponentGoulette} from './Goulette/TGs/tg1/tg1.component';
 import { INFOComponent as INFOComponentGoulette } from './Goulette/info/info.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { ConversationListComponent } from './chat/conversation-list/conversation-list.component';
+import { UtilisateurComponent } from './chat/utilisateur/utilisateur.component';
+
+
 
 
 @NgModule({
@@ -103,12 +109,18 @@ import { INFOComponent as INFOComponentGoulette } from './Goulette/info/info.com
      INFOComponentRades,
      TablesComponent,
      HeaderComponent,
+     NotfoundComponent,
+     ConversationListComponent,
+     UtilisateurComponent,
+     
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
 
     // * MATERIAL IMPORTS
     MatSidenavModule,

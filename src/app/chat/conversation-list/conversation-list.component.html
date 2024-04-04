@@ -1,0 +1,45 @@
+<!-- conversation-list.component.html 
+<ul>
+    <li *ngFor="let conversation of conversations">
+      {{ conversation.name }}
+    </li>
+  </ul>-->
+
+  <div class="chat-application overflow-hidden">
+    <!-- Sidebar -->
+    <div class="chat-sidebar d-md-block">
+      <!-- Users List -->
+      <div class="users-list-padding position-relative">
+        <a class="list-group-item" *ngFor="let user of usersChat" (click)="viewChat(user)">
+          <!-- Afficher les détails de l'utilisateur ici -->
+          <span>{{ user.nom }}</span> <!-- Exemple: Afficher le nom de l'utilisateur -->
+        </a>
+      </div>
+    </div>
+    
+    <!-- Chat Window -->
+    <div class="chat-app-window position-relative">
+      <div class="chats">
+        <div class="chat" *ngFor="let message of chats">
+          <!-- Afficher les messages de la conversation ici -->
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>{{ message.content }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Chat Form -->
+    <div class="chat-app-form px-3 py-2">
+      <div class="d-flex align-items-center">
+        <input type="text" class="form-control chat-message-send mr-2" placeholder="Type your message here" [(ngModel)]="newMessage">
+        <button type="button" class="btn btn-primary d-lg-flex align-items-center" (click)="onAddMessage()">
+          <i class="ft-send"></i>
+          <span class="d-none d-lg-block ml-1">Send</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  

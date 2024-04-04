@@ -1,0 +1,86 @@
+/* Styles pour la barre latérale des conversations */
+.chat-sidebar {
+    width: 300px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .users-list-padding {
+    padding: 10px;
+  }
+  
+  .list-group-item {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+  }
+  
+  .user-info {
+    flex-grow: 1;
+  }
+  
+  .user-name {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Styles pour la fenêtre de chat */
+  .chat-app-window {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  .chats {
+    overflow-y: auto;
+  }
+  
+  .chat {
+    margin-bottom: 10px;
+  }
+  
+  .chat-body {
+    display: flex;
+  }
+  
+  .chat-content {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .chat-time {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 5px;
+  }
+  
+  /* Styles pour le formulaire de chat */
+  .chat-app-form {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .chat-message-send {
+    flex-grow: 1;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+  }

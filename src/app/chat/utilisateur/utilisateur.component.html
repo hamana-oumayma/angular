@@ -1,0 +1,16 @@
+<div class="utilisateur-list">
+    <h2>Liste des utilisateurs</h2>
+    <ul>
+      <li *ngFor="let utilisateur of utilisateurs" (click)="selectUtilisateur(utilisateur)">
+        {{ utilisateur.nom }}
+      </li>
+    </ul>
+  </div>
+  
+  <div class="utilisateur-details" *ngIf="utilisateurSelectionne">
+    <h2>Détails de l'utilisateur</h2>
+    <p>Nom: {{ utilisateurSelectionne?.nom }}</p>
+    <p>Email: {{ utilisateurSelectionne?.email }}</p>
+    <!-- Ajoutez d'autres détails ici -->
+  </div>
+  
