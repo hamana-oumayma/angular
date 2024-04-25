@@ -27,6 +27,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { TablesComponent } from './tables/tables.component';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TaskboardModule } from './taskboard/taskboard.module';
 //BIRMCHERGUA
 import { TG1Component as TG1ComponentBirmchergua } from './Birmchergua/TGs/tg1/tg1.component';
 import { TG2Component as TG2ComponentBirmchergua } from './Birmchergua/TGs/tg2/tg2.component';
@@ -57,10 +58,17 @@ import { INFOComponent as INFOComponentFeriana} from './Feriana/info/info.compon
 //Goulette
 import { TG1Component as TG1ComponentGoulette} from './Goulette/TGs/tg1/tg1.component';
 import { INFOComponent as INFOComponentGoulette } from './Goulette/info/info.component';
-import { NotfoundComponent } from './notfound/notfound.component';
 import { ConversationListComponent } from './chat/conversation-list/conversation-list.component';
 import { UtilisateurComponent } from './chat/utilisateur/utilisateur.component';
-
+import { TasksComponent } from './tasks/tasks.component';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { WeatherComponent } from './weather/weather.component';
+import { AlertModalComponent } from './Birmchergua/TGs/tg1/alert-modal/alert-modal.component';
+import { AchatComponent } from './achat/achat.component';
+import { AjoutModalComponent } from './achat/ajout-modal/ajout-modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ReportComponent } from './report/report.component';
+import { ReportModalComponent } from './report/report-modal/report-modal.component';
 
 
 
@@ -77,6 +85,7 @@ import { UtilisateurComponent } from './chat/utilisateur/utilisateur.component';
     CardsComponent,
     SidenavComponent,
     TablesComponent,
+    
      //birmchergua
      TG1ComponentBirmchergua,
      TG2ComponentBirmchergua,
@@ -112,6 +121,15 @@ import { UtilisateurComponent } from './chat/utilisateur/utilisateur.component';
      NotfoundComponent,
      ConversationListComponent,
      UtilisateurComponent,
+     TasksComponent,
+     WeatherComponent,
+     AlertModalComponent,
+     AchatComponent,
+     AjoutModalComponent,
+     ReportComponent,
+     ReportModalComponent,
+     
+     
      
     
   ],
@@ -121,6 +139,8 @@ import { UtilisateurComponent } from './chat/utilisateur/utilisateur.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
+    TaskboardModule,
+    
 
     // * MATERIAL IMPORTS
     MatSidenavModule,
@@ -133,7 +153,8 @@ import { UtilisateurComponent } from './chat/utilisateur/utilisateur.component';
    MatCardModule,
    MatInputModule,
    NgbModule,
-   MatExpansionModule
+   MatExpansionModule,
+   MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

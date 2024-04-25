@@ -11,7 +11,8 @@
       <mat-form-field class="search"  [ngClass]="{'search-open': open == true}"> 
        
   
-        <input matInput placeholder="Search" autocomplete="off" (focus)="bigMenu = true" (focusout)="bigMenu = false">
+        <input matInput placeholder="Search" autocomplete="off" (focus)="bigMenu = true" (focusout)="bigMenu = false" (keyup.enter)="performSearch()">
+
        
       </mat-form-field>
   
@@ -19,7 +20,7 @@
         <ul class="ml-auto">
           <li>
             <button mat-button [matMenuTriggerFor]="menu" class="user mt-2 d-flex align-items-center">
-              <img src="/assets/images/user.png" alt="" class="user-image mr-1 p-2">
+              <img src="/assets/images/eya.png" alt="" class="user-image mr-1 p-2">
               User Name
               <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
             </button>

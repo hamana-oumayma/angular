@@ -6,7 +6,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
- 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -47,12 +46,12 @@ export class MapComponent implements OnInit {
       "TN.TA": "Tataouine",
     };
     const provinceRoutes: { [key: string]: string } = {
-      "TN.BA": "/rades",        // Ben Arous
-      "TN.SS": "/sousse",       // Sousse
-      "TN.SF": "/Thyna",        // Sfax
-      "TN.TU": "/goulette",     // Tunis
-      "TN.ZA": "/birmchergua", // Zaghouan
-      "TN.GB": "/bouchemma"     // Gabès
+      "TN.BA": "/Rades/tg1",        // Ben Arous
+      "TN.SS": "/Sousse/tg1",       // Sousse
+      "TN.SF": "/Feriana/tg1",        // Sfax
+      "TN.TU": "/Goulette/tg1",     // Tunis
+      "TN.ZA": "/Birmchergua/tg1", // Zaghouan
+      "TN.GB": "/Bouchemma/tg3"     // Gabès
     };
 
     const navigateToRoute = (event: MouseEvent) => {

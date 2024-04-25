@@ -1,0 +1,37 @@
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add Product</h2>
+                <button type="button" class="close" (click)="closeDialog()" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form (ngSubmit)="submitProduct()">
+                    <div class="form-group">
+                        <label for="image">Image:</label>
+                        <input type="text" class="form-control" id="image" name="image" [(ngModel)]="newProduct.image" required>
+                        <!-- Ajoutez un attribut name -->
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="newProduct.name" required>
+                        <!-- Ajoutez un attribut name -->
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price:</label>
+                        <input type="number" class="form-control" id="price" name="price" [(ngModel)]="newProduct.price" required>
+                        <!-- Ajoutez un attribut name -->
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" class="form-control" id="quantity" name="quantity" [(ngModel)]="newProduct.quantity" required>
+                        <!-- Ajoutez un attribut name -->
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

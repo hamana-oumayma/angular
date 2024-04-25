@@ -1,0 +1,33 @@
+<br><br>
+<!-- Bouton pour ajouter une nouvelle tâche -->
+<button type="button" class="add-task-button" (click)="openModal()">
+  <i class="ft-plus font-medium-3 mr-2 fa-lg"></i> 
+  Ajouter une tâche
+</button>
+
+<!-- Section pour afficher les tâches -->
+<section id="taskboard" class="app-taskboard">
+  <div class="task-list">
+    <!-- Utilisation de la boucle *ngFor pour afficher chaque tâche -->
+    <div class="task" *ngFor="let task of tasks"> 
+      <h3>{{ task.title }}</h3>
+      <p>
+        <span class="badge badge-pill bg-light-primary cursor-pointer">{{ task.createdBy }}</span> 
+      </p>
+      <p>{{ task.description }}</p>
+      <p>{{ task.datecreation }}</p>
+      
+      <div class="edit">
+        <button (click)="openEditModal(task)">
+          <i class="ft-edit-2 font-medium-3 mr-2 fa-lg"></i>
+        </button>
+        <button (click)="deleteTask(task)">
+          <i class="ft-trash font-medium-3 fa-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Template pour la modal -->
+<ng-template #modalContent></ng-template>

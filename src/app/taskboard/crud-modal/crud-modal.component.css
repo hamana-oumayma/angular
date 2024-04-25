@@ -1,0 +1,131 @@
+/* Styles pour la fenêtre modale */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1040; /* Position au-dessus de tout le contenu */
+}
+
+.modal-content {
+    background-color: white;
+    align-items: left; /* Pour centrer verticalement */
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Pour empiler les éléments verticalement */
+    margin: auto;
+    padding: 20px;
+    border: 4px solid #5c6bc0;
+    width: 130%; /* Largeur augmentée */
+    max-width: 800px; /* Largeur maximale si nécessaire */
+    border-radius: 10px;
+    /*box-shadow: 0 20px 20px rgba(120, 118, 224, 0.7);
+    transform: translate(0, -8px);*/
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between; /* Pour séparer les éléments à gauche et à droite */
+    align-items: center; /* Pour aligner verticalement les éléments */
+    margin-bottom: 20px;
+    width:80%; 
+    /*border-top: 2px solid #ccc;*/
+}
+
+.h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 20px; /* Ajouter une marge à droite pour séparer du bouton de fermeture */
+    color: #0056b3;
+}
+
+/*.close {
+    font-size: 1.2rem;
+   
+    margin-right: 1px; 
+        cursor: pointer; 
+}*/
+
+/*.modal-body {
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 5px solid; 
+    border-image: linear-gradient(to right, #5ba4e7, #5c6bc0); 
+    border-radius: 5px; 
+    width: 70%; 
+    max-width: 300px; 
+    box-sizing: border-box; 
+    transform: translate(0, -8px);
+    box-shadow: 0 20px 20px rgba(120, 118, 224, 0.7);
+}
+
+/* Styles pour les entrées du formulaire */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.modal-input {
+    height: 50px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 30px); /* Largeur moins les paddings */
+    box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur*/
+}
+.submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    color: #5c6bc0;
+    /*border-top: 2px solid #ccc; */
+}
+
+.btn-primaryy {
+    background-color: #5c6bc0;
+    color: white; /* Couleur du texte */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primaryy:hover {
+    background-color: #4854a0; /* Couleur mauve foncée au survol */
+}
+.icon-description {
+    display: flex;
+    align-items: center;
+}
+
+.icon-description i {
+    margin-right: 10px; /* Espacement entre l'icône et la description */
+}
+
+.icon-description .description {
+    font-size: 0.9rem; /* Taille de la police de la description */
+    color: #888; /* Couleur du texte de la description */
+}
+/* Ajout de styles pour le bouton close à droite */
+.close-left {
+    margin-left: 90px;
+    flex: end;
+}
+/* Ajout de styles pour augmenter la largeur des champs de formulaire */
+.wide-input {
+    width: 100%; /* Vous pouvez ajuster cette valeur selon vos besoins */
+}

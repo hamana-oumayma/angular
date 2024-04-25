@@ -1,0 +1,9 @@
+.position {
+    float: right; /* Pour placer l'élément à droite */
+    margin-left: 10px; /* Pour ajouter un espace entre l'élément et le contenu à gauche */
+}
+
+.position img {
+    width: 150px; /* Taille de l'image */
+    height: auto; /* Maintenir le ratio hauteur/largeur */
+}

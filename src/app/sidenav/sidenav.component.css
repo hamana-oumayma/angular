@@ -1,14 +1,15 @@
 .logo {
     text-align: center;
-    padding: 2.6rem 1rem;
+   padding: 0.1rem ;
 }
 
 .logo img {
-    width: 200px;
+    width: 160px;
 }
 
 .mat-sidenav {
-    background-color: #14156e; /* Couleur de fond modifiée pour le side nav */
+    background-color: #14156e;
+    font-size: 13px;
 }
 
 .mat-icon {
@@ -33,7 +34,7 @@
 }
 
 .list-item-active {
-    color: antiquewhite !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 .list-item-active .mat-list-item-content {
@@ -46,15 +47,15 @@
 
 .mat-subheader {
     color: #c8cbe6;
-    font-size: 0.6rem;
+    font-size: 1rem;
     font-weight: 100;
     letter-spacing: 1px;
 }
 .mat-expansion-panel {
     background-color: #5c6bc0;
     color:#ccd2f0 !important;
-    font-size: 0.8rem;
-    margin-right: 1rem;
+    font-size: 2px;
+    margin-right: 5px;
     vertical-align: center;
   }
  /* .mat-expansion-panel-header {
@@ -76,4 +77,6 @@
   .mat-icon {
     margin-right: 8px; /* Espacement entre l'icône et le texte */
   }
-  
+  .user {
+    font-size: 13px; /* Modifiez la taille de la police selon vos préférences */
+}

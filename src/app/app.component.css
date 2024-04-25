@@ -6,10 +6,13 @@
 
 mat-drawer{
     width: 260px;
-    background-color: #5c6bc0;
+    background:  #5c6bc0 ;
 }
 
 mat-drawer-container{
     height:100%;
     background-color:  whitesmoke;
 }
+app-sidebar {
+    display: none;
+  }

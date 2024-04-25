@@ -6,11 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./tables.component.css']
 })
 export class TablesComponent {
+  
   @Input() selectedTab!: string;
   items = [
-    { date: '10/03/2024', firstName: 'Kelly', lastName: 'Carter', centrale: 'Rades', report: 'Rapport 1' },
-    {  date: '15/03/2024', firstName: 'Peter', lastName: 'Parker', centrale: 'Goulette', report: 'Rapport 2' },
-    { date: '20/03/2024', firstName: 'William', lastName: 'Rambo', centrale: 'Sousse', report: 'Rapport 3' }
+    { date: '10/03/2024', firstName: 'oumayma', lastName: 'hamana', centrale: 'Rades', report: 'Rapport 1' },
+    {  date: '15/03/2024', firstName: 'eya', lastName: 'naouar', centrale: 'Goulette', report: 'Rapport 2' },
+    { date: '20/04/2024', firstName: 'asma', lastName: 'jh', centrale: 'Sousse', report: 'Rapport 3' }
   ];
 
   importReport() {
@@ -50,9 +51,9 @@ export class TablesComponent {
 
   //ShoppingCard
   products: any[] = [
-    { image:'/assets/images/total.jfif' ,name: 'Preslia 32 (TOTAL)', price: 9.97, quantity: 2 },
-    { image:'/assets/images/mobil.jpg' , name: 'MOBIL : DTE 832', price: 6.00, quantity: 2 },
-    { image:'/assets/images/Q8.jfif',name: 'Q8 volta', price: 15.78, quantity: 1 },
+    { image:'/assets/images/total.jfif' ,name: 'Preslia 32 (TOTAL)', price: 2.199, quantity: 2 },
+    { image:'/assets/images/mobil.jpg' , name: 'MOBIL : DTE 832', price: 1.987, quantity: 2 },
+    { image:'/assets/images/Q8.jfif',name: 'Q8 volta', price: 2.097, quantity: 1 },
     
   ];
 
@@ -80,5 +81,6 @@ export class TablesComponent {
     }
     return total;
   }
+  
 }
 

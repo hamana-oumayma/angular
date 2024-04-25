@@ -7,7 +7,7 @@ import { Message } from '../models/conversation';
   providedIn: 'root'
 })
 export class MessageService {
-  private apiUrl = 'http://127.0.0.1:8000/messages'; // Mettez à jour l'URL avec votre propre endpoint
+  private apiUrl = 'http://127.0.0.1:8000/messages/1'; // Définir l'URL avec l'ID de la conversation
 
   constructor(private http: HttpClient) {}
 
@@ -33,9 +33,10 @@ export class MessageService {
     const url = `${this.apiUrl}/${messageId}`;
     return this.http.delete<void>(url);
   }
-  sendMessage(conversationId: number, messageContent: string): Observable<any> {
-    const url = `${this.apiUrl}/${conversationId}`;
+
+  
+  sendMessage(messageContent: string): Observable<any> {
+    const url = `${this.apiUrl}/sendMessage`; // Pas besoin de l'ID de la conversation ici
     return this.http.post<any>(url, { content: messageContent });
   }
-  
 }

@@ -1,6 +1,6 @@
 <mat-nav-list>
     <div class="logo">
-        <img src="" alt="company logo" />
+        <img src="/assets/images/logo 4.png" alt="company logo" />
     </div>
     <mat-divider></mat-divider>
     <h2 matSubheader class="mt-2">APPLICATIONS</h2>
@@ -8,7 +8,9 @@
     <a mat-list-item routerLink="/dashboard" routerLinkActive="list-item-active">
         <mat-icon>dashboard</mat-icon> DASHBOARD
     </a>
-
+    <a mat-list-item routerLink="/tasks" routerLinkActive="list-item-active">
+        <mat-icon>list</mat-icon> Taskboard
+    </a>
     <mat-nav-list>
       <!-- Pour Sousse -->
       <mat-expansion-panel>
@@ -80,9 +82,6 @@
                   <mat-nav-list>
                       <a mat-list-item routerLink="/Goulette/tg1" routerLinkActive="list-item-active">
                           <mat-icon>list</mat-icon> TG1
-                      </a>
-                      <a mat-list-item routerLink="/Goulette/tg2" routerLinkActive="list-item-active">
-                          <mat-icon>list</mat-icon> TG2
                       </a>
                   </mat-nav-list>
               </mat-expansion-panel>
@@ -202,6 +201,9 @@
               <a mat-list-item routerLink="/Thyna/tg2" routerLinkActive="list-item-active">
                   <mat-icon>list</mat-icon> TG2
               </a>
+              <a mat-list-item routerLink="/Thyna/tg3" routerLinkActive="list-item-active">
+                <mat-icon>list</mat-icon> TG3
+            </a>
           </mat-nav-list>
       </mat-expansion-panel>
   </mat-nav-list>

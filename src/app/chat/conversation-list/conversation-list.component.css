@@ -43,7 +43,7 @@
   /* Styles pour la fenêtre de chat */
   .chat-app-window {
     flex-grow: 1;
-    background-color: #fff;
+    background-color: #632626;
     padding: 10px;
   }
   
@@ -73,7 +73,7 @@
   
   /* Styles pour le formulaire de chat */
   .chat-app-form {
-    background-color: #f2f2f2;
+    background-color: #af4747;
     padding: 10px;
   }
   
@@ -84,3 +84,4 @@
     padding: 10px;
     margin-right: 10px;
   }
+ 

@@ -4,23 +4,34 @@
 
 .container {
   display: flex;
+
 }
 
 .barchart, .tables {
   flex: 1;
 }
 
-.map {
-  flex: 1;
-  margin-right: 15px; /* Espace entre la carte et le graphique */
-}
-
-.chart {
-  flex: 1; /* Pour que le graphique prenne autant d'espace que la carte */
-}
-
-
 .card-title {
   font-size: 20px; 
   padding: 10px;
+}
+
+
+/* Nouveaux styles */
+
+.position {
+  display: flex;
+  margin-right: 200px;
+}
+
+.map, .courbe {
+  flex: 1;
+}
+
+.map {
+  margin-right: 15px;
+}
+
+.courbe {
+  margin-left: 15px;
 }

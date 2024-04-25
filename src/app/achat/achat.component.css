@@ -1,0 +1,223 @@
+/* REPORT table */
+#report h4 {
+    font-size: 20px;
+    text-align: start;
+    margin-left: 20px;
+  } 
+  
+  #report .border {
+    border: 3px solid #fcfdff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #5c6bc0;
+    background-color: white;
+  }
+  #report table {
+    width: 100%;
+    height:200px;
+    text-align: center;
+   }
+   #repot table thead tr {
+    border-bottom: 1px solid rgb(8, 2, 2);
+    padding: 10px;
+  }
+  /* shopping card */
+  .border {
+    border: 3px solid #fcfdff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #5c6bc0;
+    background-color: white;
+  }
+  
+  #shopping-cart, #report {
+    width: 95%;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  #shopping-cart table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #shopping-cart h4, #report h4 {
+    font-size: 20px; 
+    text-align: start;
+    margin-left: 20px;
+      font-weight:bold;
+      letter-spacing: 1px;
+  }
+  
+  #shopping-cart table thead th, #repot table thead th {
+    border-bottom: 1px solid rgb(8, 2, 2);
+    padding: 10px;
+  }
+  
+  #shopping-cart table tbody tr {
+    border-bottom: 1px solid rgb(3, 1, 1);
+  }
+  
+  #shopping-cart table tbody td {
+    padding: 10px;
+  }
+  
+  #shopping-cart table tbody .danger {
+    color:  rgb(92, 173, 219);
+  }
+  
+  #shopping-cart table tbody tr:nth-last-child(2) td {
+    font-weight: bold;
+  }
+  
+  #shopping-cart table tbody tr:last-child button {
+    background-color: #5c6bc0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .quantity-cell {
+    position: relative;
+  }
+  
+  .quantity-cell .btn {
+    background-color:  #5c6bc0;
+    color: #fff;
+  }
+  
+  .quantity-cell .quantity {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    margin: 0 5px;
+    color:  #5c6bc0;
+    font-weight: bold;
+  }
+  .ajout {
+    position: absolute;
+    top: 85px; /* Distance du haut */
+    right: 70px; /* Distance de la gauche */
+    z-index: 1; /* Assure que le bouton est au-dessus du canvas */
+    background: linear-gradient(to right, #5ba4e7,#5c6bc0); /* Dégradé de couleur */
+    border: none; /* Supprimer la bordure */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Bord arrondi */
+    cursor: pointer; /* Curseur */
+  }
+  
+  
+  /*EXTENDEDTABLE*/
+    card-title { margin-bottom: 0.5rem; }
+  .card-content { padding-top: 15px; }
+  .card-body { padding: 0; }
+  .table { margin-bottom: 0; }
+  .table th { border-top: none; border-bottom: 1px solid #e5e5e5; }
+  .table td { border-top: none; border-bottom: 1px solid #e5e5e5; }
+  .height-50 { height: 50px; }
+  .badge-pill { border-radius: 50px; padding: 0.5rem 0.75rem; font-size: 0.8rem; }
+  .bg-light-primary { background-color: #d1ecf1; color: #0c5460; }
+  .bg-light-danger { background-color: #f8d7da; color: #721c24; }
+  .bg-light-info { background-color: #d1ecf1; color: #0c5460; }
+  .bg-light-success { background-color: #d4edda; color: #155724; }
+  .cursor-pointer { cursor: pointer; }
+  /* Ajoutez ces styles pour définir l'apparence de l'icône de suppression */
+  .ft-trash-2:before {
+    font-family: "FontAwesome"; /* Assurez-vous d'inclure la police d'icônes FontAwesome ou toute autre police appropriée */
+    content: "\f1f8"; /* Code Unicode de l'icône de suppression */
+  }
+  
+  /* Assurez-vous d'inclure ces styles si nécessaire pour ajuster la taille et la couleur de l'icône */
+  .ft-trash-2:before {
+    font-size: 20px; /* Taille de l'icône */
+    color: rgb(92, 173, 219); /* Couleur de l'icône */
+  }
+  .shopping-wrapper {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+   
+  }
+  
+  .shopping-wrapper h4 {
+    margin-bottom: 0.5rem;
+    font-size: 17px; 
+    text-align: start;
+    margin-left: 20px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    color:#5c6bc0;
+  }
+  
+  .shopping-wrapper .card-content {
+    padding-top: 15px;
+  }
+  
+  .shopping-wrapper .card-body {
+    padding: 0;
+  }
+  
+  .shopping-wrapper .table {
+    margin-bottom: 0;
+    width:100%;
+    height:300px;
+  }
+  
+  .shopping-wrapper .table th {
+    border-top: none;
+    border-bottom: 1px solid #242020;
+  }
+  
+  .shopping-wrapper .table td {
+    border-top: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .shopping-wrapper .height-50 {
+    height: 50px;
+  }
+  
+  .shopping-wrapper .badge-pill {
+    border-radius: 50px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .shopping-wrapper .bg-light-primary {
+    background-color: #d1ecf1;
+    color: #0c5460;
+  }
+  
+  .shopping-wrapper .bg-light-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .shopping-wrapper .bg-light-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+  }
+  
+  .shopping-wrapper .bg-light-success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .shopping-wrapper .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  /* Styles pour l'icône de suppression */
+  .shopping-wrapper .ft-trash-2:before {
+    font-family: "FontAwesome";
+    content: "\f1f8";
+    font-size: 20px;
+    color: rgb(92, 173, 219);
+  }
+  

@@ -1,0 +1,59 @@
+<div *ngIf="selectedTab !== 'extended'">
+    <section id="shopping-cart">
+      <div class="border">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <br>
+                <h4 class="card-title" style="color:#5c6bc0;">Achat</h4>
+                <button class="btn ajout mb-2" (click)="addProduct()">Ajouter Produit</button>
+              </div>
+              <div class="card-content">
+                <div class="card-body table-responsive">
+                  <table class="table text-center m-0">
+                    <thead>
+                      <tr>
+                        <th>Image</th>
+                        <th>Produit</th>
+                        <th>Prix (DT)</th>
+                        <th>Quantité</th>
+                        <th>Montant</th>
+                        <th>Supprimer</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let product of products">
+                        <td><img [src]="product.image" alt="product" style="height: 50px;"></td>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.price }}</td>
+                        <td class="quantity-cell">
+                          <div class="btn-group ml-1">
+                            <button class="btn btn-primary px-1 py-1 font-medium-5 decrease-btn" (click)="decreaseQuantity(product)">-</button>
+                            <span class="quantity">{{ product.quantity }}</span>
+                            <button class="btn btn-primary px-1 py-1 font-medium-5 increase-btn" (click)="increaseQuantity(product)">+</button>
+                          </div>
+                        </td>
+                        <td>{{ product.price * product.quantity }}</td>
+                        <td>
+                          <a href="javascript:;" class="danger" (click)="deleteProduct(product)">
+                            <i class="ft-trash font-medium-3"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="4" class="text-right font-weight-bold">Total(DT):</td>
+                        <td>{{ calculateTotalAmount() }}</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  

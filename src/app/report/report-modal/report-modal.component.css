@@ -1,0 +1,66 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .modal-dialog {
+    background-color: #fefefe;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    padding: 20px;
+    position: relative;
+    width: 500px;
+  }
+  
+  .modal-header {
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .modal-header h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  
+  .modal-body {
+    margin-bottom: 20px;
+  }
+  
+  .modal-body label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .modal-body input[type="text"],
+  .modal-body input[type="number"] {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 95%;
+  }
+  
+  .modal-body input[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #6059c0;
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 50px;
+  }

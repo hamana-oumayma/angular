@@ -1,0 +1,53 @@
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add Product</h2>
+                <button type="button" class="close" (click)="closeDialog()" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form (ngSubmit)="submitReport()">
+                
+                    <div class="form-group">
+                        <label for="firstname">FirstName</label>
+                        <input type="text" class="form-control" id="firstname" name="firstname" [(ngModel)]="newReport.firstName" required>
+                        <!-- Ajoutez un attribut name -->
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">lastname</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname" [(ngModel)]="newReport.lastName" required>
+                        <!-- Ajoutez un attribut name -->
+                    </div>
+                    <div class="form-group">
+                        <label for="centrale">Centrale</label>
+                        <input type="text" class="form-control" id="centrale" name="centrale" [(ngModel)]="newReport.centrale" required>
+                        <!-- Ajoutez un attribut name -->
+                    </div>
+                    <div class="form-group">
+                        <label for="centrale">report</label>
+                        <input type="text" class="form-control" id="report" name="report" [(ngModel)]="newReport.report" required>
+                        <!-- Ajoutez un attribut name -->
+                    </div>
+                    <div class="form-group">
+                        <label for="report">Report</label>
+                        <!-- Ajoutez un champ d'entrée de type fichier -->
+                        <input type="file" class="form-control" id="reportFile" name="reportFile" (change)="handleFileInput($event)">
+                        <!-- Affichez le nom du fichier sélectionné -->
+                        <span *ngIf="newReport.reportFile">Selected File: {{ newReport.reportFile.name }}</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="icon-description">
+                          <i class="fa fa-calendar"></i>
+                          <label for="date">Date</label>
+                        </div>
+                        <input type="date" class="form-control wide-input" id="date" [(ngModel)]="newReport.date" name="date" required>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,22 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {  SignInService } from '../services/SignIn.service';
+import {  SignIn } from '../models/SignIn';
+
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.component.html',
   styleUrls: ['./signin.component.css']
 })
-export class SigninComponent implements OnInit {
+export class SigninComponent  {
+  signInData: SignIn = { email: '', password: '' };
 
-  constructor(private router:Router) { }
+  constructor(private signInService: SignInService) { }
 
-  ngOnInit(): void {
+  onSubmit(): void {
+    this.signInService.signIn(this.signInData)
+      .subscribe(response => {
+        console.log(response); // Gérer la réponse du serveur ici
+      });
   }
-  signIn(form: any) {
-    // Effectuez ici votre logique de connexion avec le backend
-    // Par exemple, vous pouvez envoyer une requête HTTP POST pour vérifier les informations de connexion
-
-    // Si la connexion réussit, vous pouvez rediriger l'utilisateur vers le tableau de bord
-    this.router.navigate(['/dashboard']);
-  }
-
 }

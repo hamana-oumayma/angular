@@ -1,0 +1,61 @@
+/* Styles pour la section de taskboard */
+#taskboard {
+  margin: 20px;
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.task {
+  background-color: #f9f9f9;
+  border: 2px solid #1b238b;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: calc(25% - 20px); /* Pour que chaque tâche occupe 25% de la largeur avec une marge de 10px */
+}
+
+.task  h3{
+  font-size: 17px; 
+  text-align: left;
+  margin-left: 20px;
+  font-weight:bold;
+  letter-spacing: 1px;
+  color:#5c6bc0;
+}
+
+
+.task button {
+ 
+  padding: 10px;
+  color: #5354ac; /* Couleur du texte du bouton */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.task button:first-child {
+  margin-left: 170px; /* Supprimer la marge gauche du premier bouton */
+}
+
+/* Style pour le bouton "Add Task" */
+.add-task-button {
+  margin-left: 50px;
+  background: linear-gradient(to right, #5ba4e7,#5c6bc0); /* Dégradé de couleur */
+  border: none; /* Supprimer la bordure */
+  color: white; /* Couleur du texte */
+  border-radius: 5px; /* Bord arrondi */
+  cursor: pointer; /* Curseur */
+  padding: 10px 20px;
+  
+}
+
+/* Assurez-vous d'inclure ces styles si nécessaire pour ajuster la taille et la couleur de l'icône */
+.ft-trash-2:before {
+  font-size: 25px; /* Taille de l'icône */
+  color: rgb(26, 133, 49); /* Couleur de l'icône */
+}
+.badge-pill { border-radius: 50px; padding: 0.5rem 0.75rem; font-size: 0.8rem; }
+.bg-light-primary { background-color: #d1ecf1; color: #0c5460; }

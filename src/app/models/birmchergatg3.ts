@@ -1,6 +1,4 @@
 export interface birmchergatg3{
-
-    
   id?: number;
   Date_Birmchergatg3?: Date;
   Tauxdegradation_Birmchergatg3?: number;

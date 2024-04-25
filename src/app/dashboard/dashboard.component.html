@@ -1,16 +1,21 @@
 
 <app-cards></app-cards>
-<br>
+<br><br>
+<div class="position">
+  <app-map></app-map>
 
-<br>
+  <div class="courbe">
+   <app-chart></app-chart>
+  </div>
+</div>
+  <br><br>
 <div class="container">
   <div class="barchart">
       <app-barchart></app-barchart>
   </div>
   <div class="tables">
       <app-tables [selectedTab]="selectedTab"></app-tables>
-  </div>
+  </div></div>
+<div class="meteo">
+<app-weather></app-weather>
 </div>
-<app-map></app-map>
-
-

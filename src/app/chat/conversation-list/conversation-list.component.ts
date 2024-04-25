@@ -42,13 +42,13 @@ export class ConversationListComponent implements OnInit {
       this.chats = messages;
     });
   }
-
   onAddMessage() {
     if (this.newMessage.trim() !== '') {
-      this.messageService.sendMessage(this.activeChatUserId!, this.newMessage).subscribe(() => {
-        this.newMessage = '';
-        this.loadChat(this.activeChatUserId!);
+      this.messageService.sendMessage(this.newMessage).subscribe((newMessage) => {
+        this.newMessage = ''; // Effacer le champ de saisie
+        this.chats.push(newMessage); // Ajouter le nouveau message à la liste des messages
       });
     }
   }
+  
 }

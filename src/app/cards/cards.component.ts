@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class CardsComponent implements OnInit {
 
   items=[
-    { name: 'Rendement', value: 0 , icon: 'trending_up' },
-    { name: 'Taux de Degradation', value: 0 , icon: 'eco' },
-    { name: '', value: 0 , icon: 'cloud' },
-    { name: 'Consommation du gaz', value: 0 , icon: 'local_gas_station' },
+    { name: 'Rendement'  , icon: 'trending_up' },
+    { name: 'Taux de Degradation' , icon: 'eco' },
+    { name: 'Consommation Specifique', icon: 'bolt' },
+    { name: 'Consommation du gaz' , icon: 'whatshot' },
   ];
   constructor() { }
 

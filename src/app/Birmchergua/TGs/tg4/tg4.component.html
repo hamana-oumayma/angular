@@ -1,1 +1,33 @@
-<p>tg4 works!</p>
+<div class="button-container">
+    <button class="btn btn-primary export-excel" (click)="downloadExcel()">
+      <i class="fas fa-download  import-icon"></i> 
+    </button>
+  </div>
+  
+  <div class="chart-container">
+  <br>
+  <h4 class="chart-title">Taux de dégradation</h4>
+    <canvas id="degradation-canvas" width="800" height="300"></canvas>
+  </div>
+  
+  <div class="chart-container">
+  <br>
+  <h4 class="chart-title">Consommation de gaz</h4>
+  <canvas id="gas-consumption-canvas" width="800" height="200"></canvas>
+  </div>
+  
+  <div class="chart-container">
+  <br>
+  <h4 class="chart-title">Consommation Specifique</h4>
+  <canvas id="defconso-canvas" width="800" height="300"></canvas>
+  
+  </div>
+  
+  <div class="chart-container">
+  <br>
+  <h4 class="chart-title">Rendement</h4>
+  <canvas id="rendement-canvas" width="800" height="200"></canvas>
+   
+  </div>
+  
+  

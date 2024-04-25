@@ -1,10 +1,9 @@
 export interface birmchergatg4{
 
-    
-    id?: number;
-    date?: Date ;
-    tauxdegradation?: number;
-    defconso?: number;
-    rendement?: number;
-    consogaz?: number;
+  id?: number;
+  Date_Birmchergatg4?: Date;
+  Tauxdegradation_Birmchergatg4?: number;
+  defconso_Birmchergatg4?: number;
+  rendement_Birmchergatg4?: number;
+  consogaz_Birmchergatg4?: number;
   }

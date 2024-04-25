@@ -1,10 +1,8 @@
-export interface bouchematg4{
-
-    
-    id?: number;
-    date?: Date ;
-    tauxdegradation?: number;
-    defconso?: number;
-    rendement?: number;
-    consogaz?: number;
-  }
+export interface bouchematg4 {
+  id?: number;
+  Date_bouchematg4?: Date;
+  Tauxdegradation_bouchematg4?: number;
+  defconso_bouchematg4?: number;
+  rendement_bouchematg4?: number;
+  consogaz_bouchematg4?: number;
+}

@@ -11,6 +11,9 @@ export class HeaderComponent implements OnInit {
 
   @Output() toggleSidebarForMe: EventEmitter<any> = new EventEmitter();
   public bigMenu = false;
+  public searchTerm: string = '';
+  public centrales: string[] = ['sousse', 'rades', 'birmchergua', 'thyna', 'bouchemma', 'goulette', 'feriana'];
+  public filteredCentrales!: string[];
     @Input() open;
   isFullscreen: boolean = false;
     constructor() {
@@ -40,5 +43,16 @@ export class HeaderComponent implements OnInit {
       });
     }
   }
+  performSearch() {
+    const searchTerm = this.searchTerm.trim().toLowerCase();
+    if (searchTerm) {
+      console.log("Recherche pour :", searchTerm);
+      this.filteredCentrales = this.centrales.filter(centrale =>
+        centrale.toLowerCase().includes(searchTerm)
+      );
+    console.log("Recherche pour :", searchTerm);
+  } else {
+    console.log("Aucun terme de recherche saisi.");
+    // Gérer le cas où aucun terme de recherche n'est saisi
   }
-  
+  }}
