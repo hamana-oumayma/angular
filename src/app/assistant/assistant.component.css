@@ -1,0 +1,179 @@
+/* Style de base pour le chat */
+.chat {
+  width: 400px;
+  height: 550px;
+  border: 1px solid #777676;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre */
+}
+.close-right {
+  float: right; /* Change this line */
+  margin-top: 0; 
+  font-size: 25px;
+  background: none;
+  border: none;
+}
+/* Style de l'en-tête du chat */
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+.welcome-message {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: none;
+  word-spacing: 5px; 
+  font-style: italic;
+  margin-right:90px;
+}
+.chat-header h4 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style de l'historique du chat */
+.chat-history {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* Style des messages du chat */
+.messages {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.user-message {
+  justify-content: flex-end;
+}
+
+.bot-message {
+  justify-content: flex-start;
+}
+
+.responses {
+  display: inline-block;
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Style des messages de l'utilisateur */
+.messages.blue {
+  background-color: #f0f6ff;
+  color: #007bff;
+}
+
+.fa{
+  color: #6d6eca;
+}
+
+/* Style des messages de l'assistant */
+.messages.green {
+  background-color: #f0fff0;
+  color: #228b22;
+}
+
+.messages.fa-graduation-cap {
+  color: #228b22;
+}
+
+/* Style du pied de page du chat */
+footer {
+  padding: 10px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ddd;
+}
+
+footer input[type="text"] {
+  flex-grow: 1;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+footer button {
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: linear-gradient(to right, #5ba4e7, #5c6bc0);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: linear-gradient(to right, #5ba4e7, #5c6bc0);
+}
+
+/* Style du bouton de toggle */
+.chat-toggle-right {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.fa-copy {
+  margin-right: 5px; 
+  background-color: white;
+  border: none !important; /* Ajout de la règle pour supprimer la bordure */
+  color: #5ba4e7;
+}
+.bot-message .fa-copy {
+  display: block;
+  margin-top: 5px;
+  border: none !important; /* Ajout de !important pour s'assurer que la règle est prioritaire */
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.toggle-button {
+  background: linear-gradient(to right, #5ba4e7, #5c6bc0);
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button:hover {
+  background-color: linear-gradient(to right, #5ba4e7, #5c6bc0);
+}
+
+/* Style du chat élargi */
+.expanded-chat {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  background-color: #f9f9f9;
+  z-index: 1000;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  transition: width 0.5s; /* Ajoute une transition pour l'ouverture du chat */
+}
+
+.expanded-chat.open {
+  width: 400px; /* Ajustez la largeur du chatbot selon vos préférences */
+}

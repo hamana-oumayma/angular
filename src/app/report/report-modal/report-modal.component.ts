@@ -8,13 +8,20 @@ import { Report } from 'src/app/models/Report';
   styleUrls: ['./report-modal.component.css']
 })
 export class ReportModalComponent implements OnInit {
+  id:0 | undefined;
+  firstName: string = ''; 
+  lastName: string = ''; 
+  centrale: string = ''; 
+  report: string='';
+  reportFile?: File;
+  date: string='';
   newReport: Report = {
-    date: new Date(),
+    id: 0,
     firstName: '',
     lastName: '',
     centrale: '',
     report: '',
-    id: 0
+    date: ''
   };
   
   constructor(public dialogRef: MatDialogRef<ReportModalComponent>, private http: HttpClient) { }
@@ -23,30 +30,42 @@ export class ReportModalComponent implements OnInit {
 
   submitReport(): void {
     const formData = new FormData();
-    // Convertissez la date en objet Date avant de l'ajouter à formData
     const date = new Date(this.newReport.date);
     formData.append('date', date.toISOString());
     formData.append('firstName', this.newReport.firstName);
     formData.append('lastName', this.newReport.lastName);
     formData.append('centrale', this.newReport.centrale);
-  
-    // Vérifiez si reportFile est défini avant de l'ajouter à formData
+    formData.append('report', this.newReport.report);
     if (this.newReport.reportFile) {
-        formData.append('reportFile', this.newReport.reportFile);
+      formData.append('reportFile', this.newReport.reportFile);
     }
-  
-    this.http.post('http://localhost:8000/report/new', formData).subscribe(
+    
+    if (this.newReport.id) {
+      formData.append('id', this.newReport.id.toString());
+      this.http.put('http://localhost:8000/report/update', formData).subscribe(
         (response) => {
-            console.log('rapport ajouté avec succès', response);
-            this.dialogRef.close();
+          console.log('Report updated successfully', response);
+          this.dialogRef.close(this.newReport);
         },
         (error) => {
-            console.error('Erreur lors de l\'ajout du rapport', error);
+          console.error('Error updating report', error);
         }
-    );
+      );
+    } else {
+      this.http.post('http://localhost:8000/report/new', formData).subscribe(
+        (response) => {
+          console.log('Report added successfully', response);
+          this.dialogRef.close();
+        },
+        (error) => {
+          console.error('Error adding report', error);
+        }
+      );
+    }
+    
   }
   
-
+  
   handleFileInput(event: any): void {
     const file = event.target.files[0];
     this.newReport.reportFile = file;

@@ -220,4 +220,18 @@
     font-size: 20px;
     color: rgb(92, 173, 219);
   }
+  .ft-trash-2:before {
+    font-family: "FontAwesome"; /* Assurez-vous d'inclure la police d'icônes FontAwesome ou toute autre police appropriée */
+    content: "\f1f8"; /* Code Unicode de l'icône de suppression */
+  }
   
+  /* Assurez-vous d'inclure ces styles si nécessaire pour ajuster la taille et la couleur de l'icône */
+  .ft-trash-2:before {
+    font-size: 20px; /* Taille de l'icône */
+    color: rgb(92, 173, 219); /* Couleur de l'icône */
+  }
+  .ft-edit-2::before {
+   
+    font-size: 20px; /* Taille de l'icône */
+    color: rgb(92, 173, 219);
+  }

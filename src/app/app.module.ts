@@ -58,8 +58,7 @@ import { INFOComponent as INFOComponentFeriana} from './Feriana/info/info.compon
 //Goulette
 import { TG1Component as TG1ComponentGoulette} from './Goulette/TGs/tg1/tg1.component';
 import { INFOComponent as INFOComponentGoulette } from './Goulette/info/info.component';
-import { ConversationListComponent } from './chat/conversation-list/conversation-list.component';
-import { UtilisateurComponent } from './chat/utilisateur/utilisateur.component';
+
 import { TasksComponent } from './tasks/tasks.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { WeatherComponent } from './weather/weather.component';
@@ -69,6 +68,10 @@ import { AjoutModalComponent } from './achat/ajout-modal/ajout-modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReportComponent } from './report/report.component';
 import { ReportModalComponent } from './report/report-modal/report-modal.component';
+import { MessagesComponent } from './chat/messages/messages.component';
+import { UserListComponent } from './chat/user-list/user-list.component';
+import { WholepageComponent } from './chat/wholepage/wholepage.component';
+import { AssistantComponent } from './assistant/assistant.component';
 
 
 
@@ -119,8 +122,6 @@ import { ReportModalComponent } from './report/report-modal/report-modal.compone
      TablesComponent,
      HeaderComponent,
      NotfoundComponent,
-     ConversationListComponent,
-     UtilisateurComponent,
      TasksComponent,
      WeatherComponent,
      AlertModalComponent,
@@ -128,6 +129,10 @@ import { ReportModalComponent } from './report/report-modal/report-modal.compone
      AjoutModalComponent,
      ReportComponent,
      ReportModalComponent,
+     MessagesComponent,
+     UserListComponent,
+     WholepageComponent,
+     AssistantComponent,
      
      
      

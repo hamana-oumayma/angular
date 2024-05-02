@@ -10,6 +10,7 @@ import{filter} from 'rxjs/operators' ;
 export class AppComponent implements OnInit {
   title = 'dashboard';
   sideBarOpen=true;
+ 
   subscription!: Subscription;
 constructor(private router :Router){}
   ngOnInit(){
@@ -30,6 +31,7 @@ if (this.subscription) {
     sideBarToggler(){
 this.sideBarOpen =!this.sideBarOpen;
     }
+ 
 
   }
 

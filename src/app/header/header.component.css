@@ -54,7 +54,13 @@ ul {
     
         }
     }
-  
+  .search{
+    margin: 20px 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
     .search-icon {
       font-size: 25px;
       color: #0e0d0d;

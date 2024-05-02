@@ -11,7 +11,12 @@
   margin-right: 30px;
 }
 
-
+.title h4{
+  text-align: center;
+ color : linear-gradient(to right, #5ba4e7,#5c6bc0);
+ font-weight:bold;
+ 
+}
 .legend-text {
   margin-top: 5px; /* Espacement entre la ligne de légende et le texte */
 }
@@ -38,10 +43,9 @@ border: 2px solid #1b238b;
 border-radius: 4px;
 }
 h4{
-font-size: 17px; 
-text-align: left;
-margin-left: 20px;
-font-weight:bold;
-letter-spacing: 1px;
-color:#5c6bc0;
-}
+  font-size: 20px; 
+  text-align: left;
+  margin-left: 20px;
+  letter-spacing: 3px;
+  color:#5c6bc0;
+  }

@@ -1,0 +1,38 @@
+<div class="chat-container" >
+    <div class="chat-toggle-right">
+        <button class="toggle-button" (click)="toggleChat()">
+            <i class="fas fa-robot fa-2x"></i> <!-- Icône d'assistant intelligent -->
+        </button>
+
+    <div class="chat" *ngIf="chatbotOpen">
+      <header class="chat-header">
+        <h4>Discuter</h4>
+        <button type="button" class="close close-right" (click)="closeChat()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </header>
+      <main class="chat-history">
+        <ng-container *ngFor="let item of chatHistory">
+          <div class="messages" [ngClass]="{'user-message': item.from === 'user', 'bot-message': item.from === 'bot'}">
+              <i class="fa" [ngClass]="{'fa-user-circle': item.from === 'user', 'fas fa-robot': item.from === 'bot'}"></i>
+              <span class="responses" [ngClass]="{'welcome-message': item.message.includes('Bienvenue')}">
+                  <span [innerHTML]="formatText(item.message)"></span>
+              </span>
+              <div *ngIf="item.from === 'bot'">
+               <!-- <button (click)="copyMessage(item.message)">
+                  <i class="fas fa-copy fa-1.5x" style="border: none;"></i>
+
+                </button>-->
+            </div>
+          </div>
+      </ng-container>
+      
+        
+        <ng-container *ngIf="loading"></ng-container>
+    </main>
+    <footer>
+      <input type="text" id="message-input" placeholder="Tapez votre message..." [(ngModel)]="prompt" [disabled]="loading" autocomplete="off"/>
+      <button id="send-button" (click)="sendData()">Envoyer</button>
+    </footer>
+  </div>
+</div>

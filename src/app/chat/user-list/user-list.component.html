@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="chat-list mat-elevation-z5">
+    <div>
+      <div class="wrapper">
+        <section class="users">
+          <header>
+           <h4>La Liste des Utilisateurs</h4>
+          </header>
+          <div class="users_list">
+            <a *ngFor="let user of filterUsers()" [routerLink]="['/messages', user.id]">
+              <div class="content">
+                <img [src]="user.image" alt="">
+                <div class="details">
+                  <span>{{ user.name }}</span>
+                 
+                </div>
+              </div>
+            
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>

@@ -10,6 +10,7 @@
   <div class="task-list">
     <!-- Utilisation de la boucle *ngFor pour afficher chaque tâche -->
     <div class="task" *ngFor="let task of tasks"> 
+      
       <h3>{{ task.title }}</h3>
       <p>
         <span class="badge badge-pill bg-light-primary cursor-pointer">{{ task.createdBy }}</span> 

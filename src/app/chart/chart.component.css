@@ -35,13 +35,16 @@
 
 .btn-goto-radestg1 {
     position: absolute;
-    top: 10px; /* Distance du haut */
-    right: 10px; /* Distance de la gauche */
-    z-index: 1; /* Assure que le bouton est au-dessus du canvas */
-    background: linear-gradient(to right, #5ba4e7,#5c6bc0); /* Dégradé de couleur */
-    border: none; /* Supprimer la bordure */
-    color: white; /* Couleur du texte */
-    padding: 10px 20px; /* Espacement intérieur */
-    border-radius: 5px; /* Bord arrondi */
-    cursor: pointer; /* Curseur */
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    background: linear-gradient(to right, #5ba4e7,#5c6bc0);
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 25px;
+    font-size: 13px;
+    text-align: center;
 }

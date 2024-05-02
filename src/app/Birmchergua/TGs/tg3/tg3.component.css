@@ -38,10 +38,9 @@ border: 2px solid #1b238b;
 border-radius: 4px;
 }
 h4{
-font-size: 17px; 
-text-align: left;
-margin-left: 20px;
-font-weight:bold;
-letter-spacing: 1px;
-color:#5c6bc0;
-}
+  font-size: 20px; 
+  text-align: left;
+  margin-left: 20px;
+  letter-spacing: 3px;
+  color:#5c6bc0;
+  }
