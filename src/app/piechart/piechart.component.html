@@ -1,1 +1,29 @@
-<p>piechart works!</p>
+<div class="row text-left">
+  <div class="col-sm-12">
+    <div class="chart">
+      <br>
+      <h4 class="chart-title">Tasks Performance</h4>
+      <div class="pie-chart-container">
+        
+        <canvas #pieChart id="pie-chart" style="height: 250px;"></canvas>
+      </div>
+      <br><br>
+      <div class="legend">
+        <div class="legend-item">
+          <i class="fas fa-check-circle legend-icon" style="background-color:rgba(145, 155, 214, 0.5) ;color: #5c6bc0;"></i>
+          <span class="legend-label">76%<br>Completed</span>
+        </div>
+        <div class="legend-item">
+          <i class="fas fa-spinner legend-icon" style="background-color: #f8d7da; color: #721c24;"></i>
+          <span class="legend-label">24% <br>In Progress</span>
+        </div>
+        <div class="legend-item">
+          <i class="fas fa-exclamation-circle legend-icon" style=" background-color: #d1ecf1; color: #0c5460;"></i>
+          <span class="legend-label">10% <br>Behind</span>
+          <br>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>

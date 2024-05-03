@@ -1,0 +1,40 @@
+.chart{
+  background-color: white;
+  width: 67%;
+  margin-left: 60px;
+  height:80%;
+  border: 1px grey;
+}
+.legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.legend-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+.legend-label {
+  font-size: 17px;
+  font-weight: bold;
+
+}
+.chart-title {
+  font-size: 20px; 
+  text-align: center;
+  margin-left: 20px;
+  letter-spacing: 3px;
+  color:#5c6bc0;
+  font-weight: bold
+  }

@@ -14,7 +14,7 @@ import { routes as centralesRoutes } from './centrales-routing.module';
 
 import { routes as taskboardRoutes } from 'src/app/taskboard/taskboard-routing.module';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
-
+import { RadialComponent } from './radial/radial.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { WeatherComponent } from './weather/weather.component';
 import { AchatComponent } from './achat/achat.component';
@@ -25,6 +25,9 @@ import { WholepageComponent } from './chat/wholepage/wholepage.component';
 import { MessagesComponent } from './chat/messages/messages.component';
 import { UserListComponent } from './chat/user-list/user-list.component';
 import { AssistantComponent } from './assistant/assistant.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { PiechartComponent } from './piechart/piechart.component';
+
 const routes: Routes = [
   { path: 'signin', component: SigninComponent },
   { path: '', redirectTo: '/signin', pathMatch: 'full' },
@@ -36,7 +39,6 @@ const routes: Routes = [
   {path:'signin' , component:SigninComponent},
   {path:'signup' , component:SignupComponent},
   {path:'barchart' , component:BarchartComponent},
-
   { path: 'taskboard', loadChildren: () => import('./taskboard/taskboard.module').then(m => m.TaskboardModule) },
   {path:'weather' , component:WeatherComponent},
   {path:'achat' , component:AchatComponent},
@@ -46,8 +48,10 @@ const routes: Routes = [
   {path :'wholePage' , component:WholepageComponent},
   {path:'messages' , component:MessagesComponent},
    {path:'user-list' , component:UserListComponent},
+   {path:'calendar' , component:CalendarComponent},
+   {path:'piechart' , component:PiechartComponent},
     // Autres routes de votre application
- 
+    {path:'radial' , component:RadialComponent},
   
   //dashboard
   {

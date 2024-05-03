@@ -72,7 +72,8 @@ import { MessagesComponent } from './chat/messages/messages.component';
 import { UserListComponent } from './chat/user-list/user-list.component';
 import { WholepageComponent } from './chat/wholepage/wholepage.component';
 import { AssistantComponent } from './assistant/assistant.component';
-
+import { RadialComponent } from './radial/radial.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 
 @NgModule({
@@ -133,6 +134,9 @@ import { AssistantComponent } from './assistant/assistant.component';
      UserListComponent,
      WholepageComponent,
      AssistantComponent,
+     RadialComponent,
+     CalendarComponent,
+    
      
      
      

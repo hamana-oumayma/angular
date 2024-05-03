@@ -35,3 +35,16 @@
 .courbe {
   margin-left: 15px;
 }
+.list {
+  display: flex;
+  margin-top: 80px; /* Réduire la marge supérieure */
+}
+
+.list app-piechart,
+.list app-user-list {
+  flex: 1;
+  /*margin-right: 160px; /* Réduire l'espace horizontal entre les éléments */
+}
+
+
+

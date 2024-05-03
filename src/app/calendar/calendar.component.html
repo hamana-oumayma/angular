@@ -1,0 +1,30 @@
+<div class="calendar">
+    <div class="calendar-header">
+     
+        <div class="button-container">
+            <button class="button prev-button" (click)="prevMonth()"><span class="material-icons">chevron_left</span></button>
+            <button class="button today-button" (click)="today()">Today</button>
+            <button class="button next-button" (click)="nextMonth()"><span class="material-icons">chevron_right</span></button>
+           
+        </div>
+        <div class="current">
+        <span>{{ currentYear }} - {{ currentMonth + 1 }}</span>
+    </div>
+    </div>
+    <table class="calendar-body">
+      <thead>
+        <tr>
+          <th *ngFor="let day of dayNames">{{ day }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let week of chunk(daysInMonth, 7) | slice:0:5"> <!-- Limitez à 5 semaines -->
+          <td *ngFor="let day of week">
+            <ng-container *ngIf="day !== null">{{ day }}</ng-container>
+          </td>
+        </tr>
+      </tbody>
+      
+    </table>
+    
+  </div>

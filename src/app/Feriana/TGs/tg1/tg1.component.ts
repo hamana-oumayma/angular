@@ -3,6 +3,7 @@ import { ferianatg1 } from 'src/app/models/ferianatg1';
 import { Ferianatg1Service } from 'src/app/services/ferianatg1.service';
 import { Chart , ChartOptions  } from 'chart.js/auto';
 import { HttpClient } from '@angular/common/http';
+
 @Component({
   selector: 'app-tg1',
   templateUrl: './tg1.component.html',
@@ -357,5 +358,7 @@ a.download = filename;
 document.body.appendChild(a);
 a.click();
 window.URL.revokeObjectURL(url);
+
 }
+
 }

@@ -12,11 +12,11 @@ export class UserListComponent  {
   dynamicMessage: string = "This is a dynamic message";
   users = [
     { id: 1, name: 'Faika', image: './assets/img1.jpeg' },
-    { id: 2, name: 'Bilel', image: '/assets/img2.jpeg', status: 'active now' },
+    { id: 2, name: 'Nabil', image: '/assets/img2.jpeg', status: 'active now' },
     { id: 3, name: 'khaled', image: '/assets/img4.jpeg', status: 'active now' },
     { id: 4, name: 'oumayma', image: '/assets/img4.jpeg', status: 'active now' },
     { id: 5, name: 'eya', image: '/assets/img4.jpeg', status: 'active now' },
-    { id: 6, name: 'walid', image: '/assets/img4.jpeg', status: 'active now' },
+    
   ];
 
   constructor(private router: Router) {}
