@@ -64,3 +64,21 @@
     padding: 10px;
     margin-right: 50px;
   }
+  .btn-primary{
+    position: absolute;
+    top: 385px; /* Distance du haut */
+    right: 70px; /* Distance de la gauche */
+    z-index: 1; /* Assure que le bouton est au-dessus du canvas */
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: none; /* Supprimer la bordure */
+   /* color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Bord arrondi */
+    cursor: pointer; /* Curseur */
+  }
+  .close{
+    background:none;
+    color: #0c5460;
+    font-size: 18px;
+  }

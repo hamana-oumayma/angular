@@ -20,6 +20,14 @@ export class TG1Component implements OnInit {
   ngOnInit(): void {
     this.getSoussetg1();
   }
+  showAlert() {
+    alert(`
+      Alerte !
+      Taux de Dégradation dépasse la valeur maximale de 4,
+      Consommation spécifique dépasse la valeur seuil de 7,
+      Consommation de gaz dépasse la valeur seuil de 260
+    `);
+  }
   
   getSoussetg1(): void {
     this.soussetg1Service.getVal().subscribe(soussetg1 => {

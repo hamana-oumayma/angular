@@ -10,12 +10,7 @@
   margin-bottom: 10px; 
   margin-right: 30px;
 }
-.title h4{
-  text-align: center;
- color : linear-gradient(to right, #5ba4e7,#5c6bc0);
- font-weight:bold;
- 
-}
+
 
 .legend-text {
   margin-top: 5px; /* Espacement entre la ligne de légende et le texte */
@@ -23,30 +18,48 @@
 
 .import-icon {
  
-  font-size: 28px;
-  background-color: #d1ecf1;
-    color: #0c5460;
+ font-size: 28px;
+ color:#3949ab;
+ 
 }
 
 
 .chart-container {
   border: 2px solid #ccc; /* Add a border around each chart container */
-  margin-bottom: 20px; 
-  background-color: white;
+  margin-bottom: 20px; /* Add some space between each chart container */
 }
 
 .chart-title {
   margin-left: 20px; /* Adjust the left margin to move the title a little to the right */
 }
 .chart-container{
-background-color: white;
+background-color: #f9f9f9;
 border: 2px solid #1b238b;
 border-radius: 4px;
 }
+.title h4{
+text-align: center;
+color : linear-gradient(to right, #5ba4e7,#5c6bc0);
+font-weight:bold;
+
+}
 h4{
-  font-size: 20px; 
-  text-align: left;
-  margin-left: 20px;
-  letter-spacing: 3px;
-  color:#5c6bc0;
+font-size: 20px; 
+text-align: left;
+margin-left: 20px;
+letter-spacing: 3px;
+color:#5c6bc0;
+}
+.alerte {
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #f8d7da;
   }
+.fa-exclamation-triangle{
+background-color: #f8d7da;
+  color: #721c24;
+  font-size: 20px;
+}
+.export-excel{
+background-color: rgba(189, 197, 240, 0.5);
+}

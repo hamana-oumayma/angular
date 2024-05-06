@@ -27,6 +27,8 @@ import { UserListComponent } from './chat/user-list/user-list.component';
 import { AssistantComponent } from './assistant/assistant.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { PiechartComponent } from './piechart/piechart.component';
+import { NotificationComponent } from './notification/notification.component';
+import { SearchbarComponent } from './searchbar/searchbar.component';
 
 const routes: Routes = [
   { path: 'signin', component: SigninComponent },
@@ -52,7 +54,8 @@ const routes: Routes = [
    {path:'piechart' , component:PiechartComponent},
     // Autres routes de votre application
     {path:'radial' , component:RadialComponent},
-  
+    {path:'notification' , component:NotificationComponent},
+    {path:'search' , component:SearchbarComponent},
   //dashboard
   {
     path:'dashboard',

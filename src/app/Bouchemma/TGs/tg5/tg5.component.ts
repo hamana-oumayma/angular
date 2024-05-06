@@ -19,6 +19,14 @@ export class TG5Component implements OnInit {
   ngOnInit(): void {
     this.getbouchematg5();
   }
+  showAlert() {
+    alert(`
+      Alerte !
+      Taux de Dégradation dépasse la valeur maximale de 4,
+      Consommation spécifique dépasse la valeur seuil de 7,
+      Consommation de gaz dépasse la valeur seuil de 260
+    `);
+  }
   
   getbouchematg5(): void {
     this.bouchematg5Service.getVal().subscribe(bouchematg5 => {

@@ -21,6 +21,14 @@ export class TG1Component implements OnInit {
   ngOnInit(): void {
     this.getFerianatg1();
   }
+  showAlert() {
+    alert(`
+      Alerte !
+      Taux de Dégradation dépasse la valeur maximale de 4,
+      Consommation spécifique dépasse la valeur seuil de 7,
+      Consommation de gaz dépasse la valeur seuil de 260
+    `);
+  }
   
   getFerianatg1(): void {
     this.ferianatg1Service.getVal().subscribe(ferianatg1 => {
@@ -342,7 +350,7 @@ this.http.get('http://localhost:8000/export/excel', { responseType: 'arraybuffer
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'birmchergatg1_export.xls';
+    a.download = 'ferianatg1_export.xls';
     document.body.appendChild(a);
     a.click();
     window.URL.revokeObjectURL(url);

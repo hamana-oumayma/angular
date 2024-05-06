@@ -1,7 +1,8 @@
 .container {
   display: flex;
-  justify-content: right;
-  height: 450px;
+  justify-content: center;
+  height: 460px;
+  margin-left: 20px;
 }
 
 .chat-list {
@@ -37,6 +38,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  justify-content: center;
 }
 
 .users_list a {

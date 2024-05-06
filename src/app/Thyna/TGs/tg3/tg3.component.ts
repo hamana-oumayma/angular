@@ -20,6 +20,14 @@ constructor(private thynatg3Service: Thynatg3Service, private http: HttpClient) 
 ngOnInit(): void {
   this.getThynatg3();
 }
+showAlert() {
+  alert(`
+    Alerte !
+    Taux de Dégradation dépasse la valeur maximale de 4,
+    Consommation spécifique dépasse la valeur seuil de 7,
+    Consommation de gaz dépasse la valeur seuil de 260
+  `);
+}
 
 getThynatg3(): void {
   this.thynatg3Service.getVal().subscribe(thynatg3 => {

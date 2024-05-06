@@ -1,14 +1,23 @@
 .chart{
   background-color: white;
-  width: 67%;
-  margin-left: 60px;
-  height:80%;
-  border: 1px grey;
+  
+  width: 89%;
+  margin-left: 40px;
+  height:100%;
+  border: 3px rgb(29, 9, 9);
+  border-radius: 3px;
+}
+.pie-chart-container{
+  background-color: white;
+  border: 3px rgb(29, 9, 9);
+  border-radius: 3px;
+  height: 100%;
 }
 .legend {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  text-align: center;
 }
 
 .legend-item {
@@ -21,7 +30,7 @@
   width: 20px;
   height: 20px;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 15px;
   font-size: 25px;
 }
 

@@ -20,6 +20,14 @@ export class TG1Component implements OnInit {
   ngOnInit(): void {
     this.getRadestg1();
   }
+  showAlert() {
+    alert(`
+      Alerte !
+      Taux de Dégradation dépasse la valeur maximale de 4,
+      Consommation spécifique dépasse la valeur seuil de 7,
+      Consommation de gaz dépasse la valeur seuil de 260
+    `);
+  }
   
   getRadestg1(): void {
     this.radestg1Service.getVal().subscribe(radestg1 => {

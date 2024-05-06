@@ -44,13 +44,13 @@ export class ChartComponent implements AfterViewInit {
           ],
           pointBackgroundColor: 'white', // Couleur de remplissage des points
           pointBorderColor: ' #5c6bc0', // Couleur de la bordure des points
-          pointRadius: 3,
+          pointRadius: 0,
           pointStyle: 'circle',
           showLine: true,
           fill: true,
           tension: 0.1,
           borderColor: ' #1b238b',
-          borderWidth: 1,
+          borderWidth: 2,
           backgroundColor: 'rgba(92, 107, 192, 0.5)',
         }]
       },
@@ -74,7 +74,12 @@ export class ChartComponent implements AfterViewInit {
           },
           title: {
             display: true,
-            text: 'Centrale Rades'
+            text: 'Centrale Rades',
+            color: '#5c6bc0',
+            font: {
+              size: 18,
+             // Augmenter la taille du titre
+            }
           }
         }
       }

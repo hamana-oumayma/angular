@@ -31,7 +31,7 @@ import { TG4Component as TG4ComponentBouchemma } from './Bouchemma/TGs/tg4/tg4.c
 import { TG5Component as TG5ComponentBouchemma } from './Bouchemma/TGs/tg5/tg5.component';
 import { INFOComponent as INFOComponentBouchemma } from './Bouchemma/info/info.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
-import { AlertModalComponent } from './Birmchergua/TGs/tg1/alert-modal/alert-modal.component';
+
 import { TG3Component } from './Thyna/TGs/tg3/tg3.component';
 const routes: Routes = [
     // Birmchergua
@@ -43,7 +43,7 @@ const routes: Routes = [
         { path: 'tg3', component: TG3ComponentBirmchergua },
         { path: 'tg4', component: TG4ComponentBirmchergua },
         { path: 'info', component: INFOComponentBirmchergua },
-        { path :'tg1/alertmodal' , component: AlertModalComponent},
+       
       ]
     },
     // Sousse

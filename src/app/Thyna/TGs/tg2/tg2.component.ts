@@ -20,6 +20,14 @@ export class TG2Component implements OnInit {
   ngOnInit(): void {
     this.getThynatg2();
   }
+  showAlert() {
+    alert(`
+      Alerte !
+      Taux de Dégradation dépasse la valeur maximale de 4,
+      Consommation spécifique dépasse la valeur seuil de 7,
+      Consommation de gaz dépasse la valeur seuil de 260
+    `);
+  }
   
   getThynatg2(): void {
     this.thynatg2Service.getVal().subscribe(thynatg2 => {

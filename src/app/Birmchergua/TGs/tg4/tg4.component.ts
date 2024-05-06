@@ -20,7 +20,15 @@ export class TG4Component implements OnInit {
   ngOnInit(): void {
     this.getbirmchergastg4();
   }
-
+  showAlert() {
+    alert(`
+      Alerte !
+      Taux de Dégradation dépasse la valeur maximale de 4,
+      Consommation spécifique dépasse la valeur seuil de 7,
+      Consommation de gaz dépasse la valeur seuil de 260
+    `);
+  }
+  
   getbirmchergastg4(): void {
     this.birmchergatg4Service.getVal().subscribe(birmchergastg4 => {
       // Assigning data without filtering

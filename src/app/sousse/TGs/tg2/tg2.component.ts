@@ -20,6 +20,14 @@ export class TG2Component implements OnInit {
   ngOnInit(): void {
     this.getSoussetg2();
   }
+  showAlert() {
+    alert(`
+      Alerte !
+      Taux de Dégradation dépasse la valeur maximale de 4,
+      Consommation spécifique dépasse la valeur seuil de 7,
+      Consommation de gaz dépasse la valeur seuil de 260
+    `);
+  }
   
   getSoussetg2(): void {
     this.soussetg2Service.getVal().subscribe(soussetg2 => {

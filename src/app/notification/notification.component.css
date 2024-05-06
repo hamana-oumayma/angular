@@ -1,0 +1,9 @@
+.notification {
+    background-color: #f8d7da; /* Couleur de fond pour les notifications d'erreur */
+    color: #721c24; /* Couleur du texte */
+    padding: 10px; /* Espace intérieur */
+    margin-bottom: 10px; /* Marge en bas */
+    border-radius: 5px; /* Coins arrondis */
+    border: 1px solid #f5c6cb; /* Bordure */
+  }
+  

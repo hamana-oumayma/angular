@@ -20,6 +20,14 @@ constructor(private ferianatg2Service: Ferianatg2Service, private http: HttpClie
 ngOnInit(): void {
   this.getFerianatg2();
 }
+showAlert() {
+  alert(`
+    Alerte !
+    Taux de Dégradation dépasse la valeur maximale de 4,
+    Consommation spécifique dépasse la valeur seuil de 7,
+    Consommation de gaz dépasse la valeur seuil de 260
+  `);
+}
 
 getFerianatg2(): void {
   this.ferianatg2Service.getVal().subscribe(ferianatg2 => {

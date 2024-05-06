@@ -17,7 +17,8 @@
     max-width: 80%;
     padding: 20px;
     position: relative;
-    width: 500px;
+    width: 400px;
+    height: 380px;
   }
   
   .modal-header {
@@ -63,4 +64,22 @@
     font-size: 14px;
     padding: 10px;
     margin-right: 50px;
+  }
+  .btn-primary{
+    position: absolute;
+    top: 365px; /* Distance du haut */
+    right: 70px; /* Distance de la gauche */
+    z-index: 1; /* Assure que le bouton est au-dessus du canvas */
+    background-color: #f8d7da;
+    color: #721c24;
+    border: none; /* Supprimer la bordure */
+   /* color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Bord arrondi */
+    cursor: pointer; /* Curseur */
+  }
+  .close{
+    background:none;
+    color: #61161e;
+    font-size: 18px;
   }

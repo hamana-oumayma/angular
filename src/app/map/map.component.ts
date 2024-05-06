@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
+ 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -13,15 +14,17 @@ export class MapComponent implements OnInit {
     const provincesMap = document.getElementById("provinces-map");
     const provinces = document.querySelectorAll<SVGElement>("#provinces-map path");
     const provinceName = document.getElementById("province-name") as HTMLElement;
+
     const provinceLabel = document.createElement("div");
     provinceLabel.id = "province-label";
     provinceLabel.style.position = "absolute";
     provinceLabel.style.backgroundColor = "#ffffff";
     provinceLabel.style.padding = "5px";
     provinceLabel.style.border = "1px solid #000000";
-    provinceLabel.style.display = "none";
+    provinceLabel.style.display = "none"; // Caché par défaut
     document.body.appendChild(provinceLabel);
 
+    // Informations sur les noms des provinces
     const provinceNames: { [key: string]: string } = {
       "TN.BJ": "Béja",
       "TN.BA": "Ben Arous",
@@ -45,12 +48,13 @@ export class MapComponent implements OnInit {
       "TN.KB": "Kébili",
       "TN.TA": "Tataouine",
     };
+
     const provinceRoutes: { [key: string]: string } = {
       "TN.BA": "/Rades/tg1",        // Ben Arous
       "TN.SS": "/Sousse/tg1",       // Sousse
-      "TN.SF": "/Feriana/tg1",        // Sfax
+      "TN.SF": "/Feriana/tg1",      // Sfax
       "TN.TU": "/Goulette/tg1",     // Tunis
-      "TN.ZA": "/Birmchergua/tg1", // Zaghouan
+      "TN.ZA": "/Birmchergua/tg1",  // Zaghouan
       "TN.GB": "/Bouchemma/tg3"     // Gabès
     };
 
@@ -115,7 +119,7 @@ export class MapComponent implements OnInit {
       "TN.SS": "#5c6bc0",  // Jaune pour Sousse
       "TN.GF": "#5c6bc0",  // Rose pour Gafsa
       "TN.ZA": "#5c6bc0",  // Cyan pour Zaghouan
-      "TN.GB":"#5c6bc0",  // Orange pour Gabès
+      "TN.GB": "#5c6bc0",  // Orange pour Gabès
     };
 
     for (const zoneId in zoneStyles) {
@@ -124,4 +128,6 @@ export class MapComponent implements OnInit {
         zoneElement.style.fill = zoneStyles[zoneId];
       }
     }
-  }}
+  }
+  
+}

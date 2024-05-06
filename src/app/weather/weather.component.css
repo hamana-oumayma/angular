@@ -1,14 +1,17 @@
 .weather {
     margin: 10px;
-    height: 220px;
-    width: 30%;
+    height: 450px;
+    width: 160%;
     color: white;
     background-color:rgba(25, 41, 133, 0.5) ;
-    margin-left: auto;
-    margin-right: 15px;
+    margin-left: 40px;
+    /*margin-right: 15px;*/
 }
 
-
+h2{
+    text-align: center;
+   margin-top: 50px;
+}
 
 .place, .temperature {
     text-align: center;
@@ -41,4 +44,7 @@
 .nav-item:hover {
     transform: translate(0, -8px);
     box-shadow: 0 20px 20px rgba(0, 0, 0, .16);
+}
+.mat-headline {
+    margin-top: 40px;
 }

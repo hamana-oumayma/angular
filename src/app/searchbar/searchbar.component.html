@@ -1,0 +1,13 @@
+<!-- searchbar.component.html -->
+<div class="search-container">
+    <input type="text" placeholder="Rechercher..." class="search-input" (input)="searchCentrale($event)">
+    <div class="search-results" *ngIf="searchResults.length > 0">
+      <ul>
+        <li *ngFor="let result of searchResults">
+          <a *ngIf="result.path" [routerLink]="result.path">{{ result.name }}</a>
+          <span *ngIf="!result.path">{{ result.name }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

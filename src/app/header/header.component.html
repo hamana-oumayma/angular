@@ -8,20 +8,16 @@
         <mat-icon>menu</mat-icon>
       </button>
       <mat-icon class="search-icon">search</mat-icon>
-      <mat-form-field class="search"  [ngClass]="{'search-open': open == true}"> 
        
-  
-        <input matInput placeholder="Search" autocomplete="off" (focus)="bigMenu = true" (focusout)="bigMenu = false" (keyup.enter)="performSearch()">
-
-       
-      </mat-form-field>
-  
+        <app-searchbar></app-searchbar>
+      
+      
       <div class="row mr-2 ml-auto">
         <ul class="ml-auto">
           <li>
             <button mat-button [matMenuTriggerFor]="menu" class="user mt-2 d-flex align-items-center">
-              <img src="/assets/images/eya.png" alt="" class="user-image mr-1 p-2">
-              User Name
+              <img src="/assets/images/oumaa.JPG" alt="" class="user-image mr-1 p-2">
+              Oumayma Hamana
               <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
             </button>
             <mat-menu #menu="matMenu">

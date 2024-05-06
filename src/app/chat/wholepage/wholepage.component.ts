@@ -17,10 +17,10 @@ export class WholepageComponent implements OnInit {
 
   users = [
     { id: 1, name: 'Faika', image: '/assets/images/img1.png', status: 'active now' },
+    
     { id: 2, name: 'Bilel', image: '/assets/images/img5.png', status: 'active now' },
     { id: 3, name: 'khaled', image: '/assets/images/img6.png', status: 'active now' },
-    { id: 4, name: 'oumayma', image: '/assets/images/user.jpg', status: 'active now' },
-    { id: 5, name: 'eya', image: './assets/images/eya.png', status: 'active now' },
+    { id: 5, name: 'eya', image: './assets/images/eyaa.jpg', status: 'active now' },
     { id: 6, name: 'walid', image: './assets/images/img5.png', status: 'active now' },
   ];
 

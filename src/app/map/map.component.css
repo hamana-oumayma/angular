@@ -83,4 +83,10 @@ main p {
     margin: auto;
   }
   
- 
+  #province-label {
+    position: absolute;
+    background-color: #ffffff;
+    padding: 5px;
+    border: 1px solid #000000;
+    display: none; /* Caché par défaut */
+  }

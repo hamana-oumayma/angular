@@ -50,19 +50,6 @@
         cursor: pointer; 
 }*/
 
-/*.modal-body {
-    align-items: center;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 5px solid; 
-    border-image: linear-gradient(to right, #5ba4e7, #5c6bc0); 
-    border-radius: 5px; 
-    width: 70%; 
-    max-width: 300px; 
-    box-sizing: border-box; 
-    transform: translate(0, -8px);
-    box-shadow: 0 20px 20px rgba(120, 118, 224, 0.7);
-}
 
 /* Styles pour les entrées du formulaire */
 .form-group {
@@ -121,10 +108,12 @@
     color: #888; /* Couleur du texte de la description */
 }
 /* Ajout de styles pour le bouton close à droite */
-.close-left {
-    margin-left: 90px;
-    flex: end;
-}
+.close{
+    background:none;
+    color: #61161e;
+    font-size: 18px;
+    margin-left: 60px;
+  }
 /* Ajout de styles pour augmenter la largeur des champs de formulaire */
 .wide-input {
     width: 100%; /* Vous pouvez ajuster cette valeur selon vos besoins */

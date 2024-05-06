@@ -13,7 +13,8 @@ export class HeaderComponent implements OnInit {
   public bigMenu = false;
   public searchTerm: string = '';
   public centrales: string[] = ['sousse', 'rades', 'birmchergua', 'thyna', 'bouchemma', 'goulette', 'feriana'];
-  public filteredCentrales!: string[];
+  public filteredCentrales: string[] = []; // Nouvelle propriété pour stocker les centrales filtrées
+
     @Input() open;
   isFullscreen: boolean = false;
     constructor() {

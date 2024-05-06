@@ -19,6 +19,14 @@ export class TG2Component implements OnInit {
   ngOnInit(): void {
     this.getbirmchergatg2();
   }
+  showAlert() {
+    alert(`
+      Alerte !
+      Taux de Dégradation dépasse la valeur maximale de 4,
+      Consommation spécifique dépasse la valeur seuil de 7,
+      Consommation de gaz dépasse la valeur seuil de 260
+    `);
+  }
   
   getbirmchergatg2(): void {
     this.birmchergatg2Service.getVal().subscribe(birmchergastg2 => {

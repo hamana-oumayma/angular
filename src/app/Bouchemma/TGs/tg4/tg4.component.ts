@@ -19,6 +19,14 @@ constructor(private bouchematg4Service: Bouchematg4Service, private http: HttpCl
 ngOnInit(): void {
   this.getbouchematg4();
 }
+showAlert() {
+  alert(`
+    Alerte !
+    Taux de Dégradation dépasse la valeur maximale de 4,
+    Consommation spécifique dépasse la valeur seuil de 7,
+    Consommation de gaz dépasse la valeur seuil de 260
+  `);
+}
 
 getbouchematg4(): void {
   this.bouchematg4Service.getVal().subscribe(bouchematg4 => {

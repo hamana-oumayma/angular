@@ -62,7 +62,7 @@ import { INFOComponent as INFOComponentGoulette } from './Goulette/info/info.com
 import { TasksComponent } from './tasks/tasks.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { WeatherComponent } from './weather/weather.component';
-import { AlertModalComponent } from './Birmchergua/TGs/tg1/alert-modal/alert-modal.component';
+
 import { AchatComponent } from './achat/achat.component';
 import { AjoutModalComponent } from './achat/ajout-modal/ajout-modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -74,6 +74,8 @@ import { WholepageComponent } from './chat/wholepage/wholepage.component';
 import { AssistantComponent } from './assistant/assistant.component';
 import { RadialComponent } from './radial/radial.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { NotificationComponent } from './notification/notification.component';
+import { SearchbarComponent } from './searchbar/searchbar.component';
 
 
 @NgModule({
@@ -125,7 +127,7 @@ import { CalendarComponent } from './calendar/calendar.component';
      NotfoundComponent,
      TasksComponent,
      WeatherComponent,
-     AlertModalComponent,
+     
      AchatComponent,
      AjoutModalComponent,
      ReportComponent,
@@ -136,6 +138,8 @@ import { CalendarComponent } from './calendar/calendar.component';
      AssistantComponent,
      RadialComponent,
      CalendarComponent,
+     NotificationComponent,
+     SearchbarComponent,
     
      
      

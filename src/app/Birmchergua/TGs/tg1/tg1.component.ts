@@ -3,7 +3,8 @@ import { birmchergatg1 } from 'src/app/models/birmchergatg1';
 import { Birmchergatg1Service } from 'src/app/services/birmchergatg1.service';
 import { Chart , ChartOptions , Scriptable  } from 'chart.js/auto';
 import { HttpClient } from '@angular/common/http';
-import { AlertModalComponent } from './alert-modal/alert-modal.component';
+import { AlertService } from 'src/app/alert.service';
+import { MatDialog } from '@angular/material/dialog';
 @Component({
   selector: 'app-tg1',
   templateUrl: './tg1.component.html',
@@ -11,18 +12,30 @@ import { AlertModalComponent } from './alert-modal/alert-modal.component';
 })
 
 export class TG1Component implements OnInit {
-  
+ 
   birmchergastg1: birmchergatg1[] = [];
   degradationChart: any;
   gasConsumptionChart: any;
   defconsoChart: any;
   rendementChart: any;
-modalVisible: any;
-  constructor(private birmchergatg1Service: Birmchergatg1Service, private http: HttpClient) { }
-  
+
+  constructor(private birmchergatg1Service: Birmchergatg1Service, private http: HttpClient, private alertService: AlertService,private dialog: MatDialog) { }
+
   ngOnInit(): void {
     this.getbirmchergatg1();
   }
+
+  showAlert() {
+    alert(`
+      Alerte !
+      Taux de Dégradation dépasse la valeur maximale de 4,
+      Consommation spécifique dépasse la valeur seuil de 7,
+      Consommation de gaz dépasse la valeur seuil de 260
+    `);
+  }
+  
+ 
+  
   
   getbirmchergatg1(): void {
     this.birmchergatg1Service.getVal().subscribe(birmchergastg1 => {
@@ -55,6 +68,7 @@ modalVisible: any;
         const constantGasConsumptionData = Array(gasConsumptionData.length).fill(260);
        const constantDefconsoData = Array(defconsoData.length).fill(7);
        const constantRendementData = Array(rendementData.length).fill(28);
+      
         // Creating the degradation chart
         this.degradationChart = new Chart('degradation-canvas', {
           type: 'line',
@@ -354,7 +368,8 @@ private downloadFile(data: any, filename: string, type: string): void {
   window.URL.revokeObjectURL(url);
 }
 }
-function showAlertModal() {
+
+function showAlert() {
   throw new Error('Function not implemented.');
 }
 
