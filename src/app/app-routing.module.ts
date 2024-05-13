@@ -13,7 +13,7 @@ import { BarchartComponent } from './barchart/barchart.component';
 import { routes as centralesRoutes } from './centrales-routing.module';
 
 import { routes as taskboardRoutes } from 'src/app/taskboard/taskboard-routing.module';
-import { NotfoundComponent } from './pages/notfound/notfound.component';
+//import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { RadialComponent } from './radial/radial.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { WeatherComponent } from './weather/weather.component';
@@ -29,17 +29,24 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { PiechartComponent } from './piechart/piechart.component';
 import { NotificationComponent } from './notification/notification.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
+import { ForgetpasswordComponent } from './pages/forgetpassword/forgetpassword.component';
+import { NotificationService } from './notification.service';
 
 const routes: Routes = [
-  { path: 'signin', component: SigninComponent },
-  { path: '', redirectTo: '/signin', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+ 
 
+  {path:'forgetpassword' , component:ForgetpasswordComponent},
   {path:'assistant' , component:AssistantComponent},
   {path: 'chart' , component:ChartComponent},
   {path:'map' , component:MapComponent},
   {path:'tasks' , component:TasksComponent},
-  {path:'signin' , component:SigninComponent},
-  {path:'signup' , component:SignupComponent},
+  {path:'login' , component:LoginComponent},
+  {path:'register' , component:RegisterComponent},
   {path:'barchart' , component:BarchartComponent},
   { path: 'taskboard', loadChildren: () => import('./taskboard/taskboard.module').then(m => m.TaskboardModule) },
   {path:'weather' , component:WeatherComponent},
@@ -73,7 +80,7 @@ const routes: Routes = [
   ...centralesRoutes,
   ...taskboardRoutes,
  // Page non trouvée
- { path: '**', component:NotfoundComponent }
+ //{ path: '**', component:NotfoundComponent }
 ];
 
 

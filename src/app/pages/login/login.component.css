@@ -2,78 +2,69 @@
     position: relative;
     width: 100%;
     height: 700px;
-}
-
-.image img {
+  }
+  
+  .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: blur(1.5px);
-}
-
-.reg-form {
+  }
+  
+  
+  
+  .reg-form {
     position: absolute;
-    top: 50%; /* Positionnement vertical au milieu de l'image */
-    left: 50%; /* Positionnement horizontal au milieu de l'image */
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    color: blanchedalmond;
     background: rgba(255, 255, 255, 0.5); /* Fond semi-transparent */
-    max-width: 800px;
-    height: auto; /* Pour que la hauteur s'adapte au contenu */
+    color: #1b1919;
+    max-width: 400px;
     padding: 30px;
     border-radius: 15px;
+    /*box-shadow: 0 0 20px rgba(38, 157, 255, 0.5); /* Ombre semi-transparente */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
-}
-
-p {
-    color: #000000;
-}
-
-a {
-    color: #192253;
-}
-
-h3 {
-    color: #192253;
-    font-size: 15px;
-}
-
-label {
+  }
+  h3 {
+    color: rgb(17, 16, 16);
+    font-size: 20px;
+  }
+  
+  label {
     margin-bottom: 8px;
-    color: rgb(2, 2, 2);
-    font-size: 15px;
-   
-}
-
-input {
+    color: rgb(24, 22, 22);
+    font-size: 20px;
+  }
+  
+  input {
     padding: 7px;
     margin-bottom: 9px;
     width: 100%;
-}
-
-button {
-    background-color: #5c6bc0;
+  }
+  
+  button {
+    background-color: #222c8d;
     color: #020202;
     padding: 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    align-self: self-start;
-   
-}
-
-button:hover {
+  }
+  a {
+    color: #0c22ec;
+  }
+  
+  button:hover {
     background-color: #251e1ebe;
-}
-
-app-header {
+  }
+  app-header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
-}
+  }

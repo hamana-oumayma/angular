@@ -28,6 +28,7 @@ import { TablesComponent } from './tables/tables.component';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TaskboardModule } from './taskboard/taskboard.module';
+import { ReactiveFormsModule } from '@angular/forms';
 //BIRMCHERGUA
 import { TG1Component as TG1ComponentBirmchergua } from './Birmchergua/TGs/tg1/tg1.component';
 import { TG2Component as TG2ComponentBirmchergua } from './Birmchergua/TGs/tg2/tg2.component';
@@ -60,7 +61,7 @@ import { TG1Component as TG1ComponentGoulette} from './Goulette/TGs/tg1/tg1.comp
 import { INFOComponent as INFOComponentGoulette } from './Goulette/info/info.component';
 
 import { TasksComponent } from './tasks/tasks.component';
-import { NotfoundComponent } from './pages/notfound/notfound.component';
+//import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { WeatherComponent } from './weather/weather.component';
 
 import { AchatComponent } from './achat/achat.component';
@@ -76,6 +77,9 @@ import { RadialComponent } from './radial/radial.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { NotificationComponent } from './notification/notification.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
+import { ForgetpasswordComponent } from './pages/forgetpassword/forgetpassword.component';
 
 
 @NgModule({
@@ -124,7 +128,7 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
      INFOComponentRades,
      TablesComponent,
      HeaderComponent,
-     NotfoundComponent,
+    // NotfoundComponent,
      TasksComponent,
      WeatherComponent,
      
@@ -140,6 +144,9 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
      CalendarComponent,
      NotificationComponent,
      SearchbarComponent,
+     RegisterComponent,
+     LoginComponent,
+     ForgetpasswordComponent,
     
      
      
@@ -153,7 +160,7 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
     FormsModule,
     HttpClientModule,
     TaskboardModule,
-    
+    ReactiveFormsModule,
 
     // * MATERIAL IMPORTS
     MatSidenavModule,

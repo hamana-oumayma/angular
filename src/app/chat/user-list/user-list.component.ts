@@ -11,11 +11,13 @@ export class UserListComponent  {
   searchValue: string = '';
   dynamicMessage: string = "This is a dynamic message";
   users = [
-    { id: 5, name: 'eya', image: '/assets/images/eyaa.jpg', status: 'active now' },
+    
     { id: 1, name: 'Faika', image: '/assets/images/img1.png' },
     { id: 2, name: 'Nabil', image: '/assets/images/img5.png', status: 'active now' },
     { id: 3, name: 'khaled', image: '/assets/images/img6.png', status: 'active now' },
-    { id: 4, name: 'oumayma', image: '/assets/images/oumaa.JPG', status: 'active now' },
+    { id: 3, name: 'Mohamed', image: '/assets/images/img5.png', status: 'active now' },
+    { id: 3, name: 'Iheb', image: '/assets/images/img6.png', status: 'active now' },
+   
 
     
   ];

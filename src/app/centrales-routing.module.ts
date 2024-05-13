@@ -30,7 +30,7 @@ import { TG3Component as TG3ComponentBouchemma } from './Bouchemma/TGs/tg3/tg3.c
 import { TG4Component as TG4ComponentBouchemma } from './Bouchemma/TGs/tg4/tg4.component';
 import { TG5Component as TG5ComponentBouchemma } from './Bouchemma/TGs/tg5/tg5.component';
 import { INFOComponent as INFOComponentBouchemma } from './Bouchemma/info/info.component';
-import { NotfoundComponent } from './pages/notfound/notfound.component';
+//import { NotfoundComponent } from './pages/notfound/notfound.component';
 
 import { TG3Component } from './Thyna/TGs/tg3/tg3.component';
 const routes: Routes = [
@@ -101,7 +101,7 @@ const routes: Routes = [
       ]
     },
     // Page non trouvée
-    { path: '**', component: NotfoundComponent }
+    //{ path: '**', component: NotfoundComponent }
   ];
   
   @NgModule({
